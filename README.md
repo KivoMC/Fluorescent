@@ -35,7 +35,7 @@ If you've made changes, you can preview the Default look using **Try in world** 
 
 Any looks you've saved yourself will stay in **Saved**.
 
-A few of my masks were made using Refined Torches textures. You don't need that resource pack, but I'd recommend it if you want those masks to line up properly. Some included patterns also use Enderscape blocks and need that mod's textures.
+A few of my masks were made using Refined Torches textures. You don't need that resource pack, but I'd recommend it if you want those masks to line up properly.
 
 ## Getting Started
 
