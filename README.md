@@ -1,64 +1,162 @@
 # Fluorescent for Minecraft 26.3
 
-I made Fluorescent so you can add pixelated bloom to the parts of block and item textures you choose. Paint a torch flame, the windows of a lantern or the eyes on a spawner. Self-lit paint lets those parts glow in darkness. Minecraft continues to handle the world's light levels.
+Fluorescent is a Minecraft mod I've been working on that adds customizable pixelated bloom to the game.
 
-## Install
+You can choose exactly which parts of a block or item should glow by painting over its texture. Whether it's a torch flame, a lantern, or the eyes on a mob spawner, you get to decide what lights up.
 
-You'll need Minecraft Java Edition 26.3, Fabric Loader 0.19.5 or newer, Java 25 and Fabric API for 26.3. Put the Fluorescent JAR in your client's mods folder and restart the game. If you're updating, replace the old Fluorescent or Still Bloom JAR so only one is installed. Sodium is optional.
+There's also a self-lit option that lets painted areas glow in the dark without changing Minecraft's actual lighting.
 
-This package is version `0.30.0-rc.24+mc26.3`.
+## Installation
 
-## The Default look
+You'll need:
 
-New installs start with my Default look: soft 3 px bloom, 33% smoothness, self-lit paint and first-person held-item bloom. It covers 88 block IDs, including four linked groups, and 14 held-item profiles. I painted patterns such as the spawner eyes and linked the torch and wall torch.
+- Minecraft Java Edition 26.3
+- Fabric Loader 0.19.5 or newer
+- Fabric API for 26.3
+- Java 25
 
-If you already have Fluorescent installed, go to **F7 → Looks → Built-in → Default**. Choose **Try in world** to preview it or **Apply → Apply complete setup** to replace your current settings and masks. **Undo** brings back your previous setup. Your own looks stay in **Saved**. Some of my masks use Refined Torches textures or Enderscape blocks, so those patterns need the matching assets loaded.
+Drop the Fluorescent JAR into your `mods` folder and launch the game.
 
-## Make your first light
+Sodium is optional.
 
-1. Load a world and press **F7**. The first visit opens a four-page guide. Choose **Next** to read it or **Skip** to start editing. **Guide** in the studio footer opens it again.
-2. Open **Blocks**, select a placed block and choose **Paint mask**. Select the model texture, then paint the pixels that should glow. **Fill** selects the whole texture. **Clear** and **Remove mask** turn off that texture's bloom.
-3. Choose **Live preview** to see the effect while adjusting it. In **Glow**, set the pixel size, smoothness and strength. **Keep block detail** controls how much glow covers the emitting block itself. Open **Light response** for self-lit paint, uniform emission and brightness smoothing.
-4. Open **Looks** and choose **Save current**. Use the saved look's sharing controls to copy its code. A friend can use **Import**, preview it, and choose whether to apply it.
+## The Default Look
+
+I've included a Default look so you can get started without having to paint everything yourself.
+
+It uses 3 px bloom with 33% smoothness, self-lit textures, and first-person held-item glow.
+
+I've also set up 88 blocks and 14 held-item profiles, including custom-painted textures like the spawner eyes. Some related blocks are linked together, so things like torches and wall torches can share their masks.
+
+The Default look is already selected when you first install Fluorescent.
+
+You can always find it again under **F7 → Looks → Built-in → Default**.
+
+If you've made changes, you can preview the Default look using **Try in world** or restore it using **Apply → Apply complete setup**. You can also use **Undo** to bring back your previous setup.
+
+Any looks you've saved yourself will stay in **Saved**.
+
+A few of my masks were made using Refined Torches textures. You don't need that resource pack, but I'd recommend it if you want those masks to line up properly.
+
+## Getting Started
+
+Here's how to make your first block glow.
+
+1. **Open Fluorescent.** Press **F7** while in a world. The first time you open it, a short guide will walk you through the basics. You can skip it or reopen it later.
+
+2. **Pick a block.** Head over to **Blocks**, select a block, and click **Paint mask**. Choose a texture and paint whichever pixels you want to glow. You can also use **Fill** to select everything or **Clear** and **Remove mask** to remove the glow.
+
+3. **Adjust the glow.** Turn on **Live preview** to see your changes as you make them. Under **Glow**, you can change the pixel size, strength, smoothness, and more. **Keep block detail** controls how much of the original texture shows through. **Light response** has options for self-lit textures, uniform emission, and brightness smoothing.
+
+4. **Save your work.** Once you're happy with everything, go to **Looks → Save current**. You can also share your look with other people using a share code. They can import it, preview it, and decide whether they want to use it.
 
 ## Controls
 
-| Default key | Action |
-| --- | --- |
-| F7 | Open the studio |
-| G | Open the block under the crosshair in live preview |
-| F8 | Toggle bloom for a quick comparison |
-| F9 | Cycle pixel size |
+| Key | What it does |
+|---|---|
+| F7 | Open Fluorescent |
+| G | Open the block you're looking at in live preview |
+| F8 | Toggle bloom on or off |
+| F9 | Switch between pixel sizes |
 | F10 | Reload settings and masks |
 
-Change key bindings under Minecraft's Controls menu.
+You can change these in Minecraft's Controls menu.
 
-Pixel-size choices are 2 — Fine, 3 — Balanced (Default) and 4 — Chunky. F9 cycles 2 → 3 → 4. Distance sizing can make the pixels smaller farther away, using 3→2, 4→3 or 4→2. Smaller pixels give you a finer glow but take more work to render.
+### Pixel Sizes
 
-## Choose what glows
+Fluorescent has three pixel sizes:
 
-- In **Blocks**, choose a block's color, strength, bloom shape, flare or detail. Use **Link blocks** to share settings and compatible mask patterns between variants. Before applying the link, you can choose which block to copy the settings from.
-- In **Held Items**, turn on bloom for items in your hands or other players' hands. Hold an item and use **Edit items** to work with its textures. You can set up placed-block and held-item masks separately.
-- In **Glow**, try square, soft, diamond or starburst shapes. **Distance pixels** lets the grid use smaller pixels on distant sources. **Performance** controls bloom range and distance fade.
-- Resource packs can change the textures and how they fit the model. After changing a pack, check the texture preview to make sure your paint still lines up. The block painter doesn't support placed liquids or special geometry without an editable block model.
+- **2 — Fine:** Smaller, more detailed glow.
+- **3 — Balanced:** The default size.
+- **4 — Chunky:** Bigger, more noticeable pixels.
 
-## Updating and saved settings
+Pressing **F9** cycles through all three.
 
-The mod ID and configuration filenames still use `stillbloom`. Your masks, block links, held-item overrides and setup presets carry over when you update. Whether you've dismissed the guide is saved for that Minecraft instance; it isn't included in shared looks. If you have a backup from the older ungrouped mask format, it's named `stillbloom-textures.json.pre-groups.bak`.
+There's also **Distance pixels**, which lets the glow use smaller pixels as you move farther away. You can choose between 3→2, 4→3, and 4→2.
 
-Unsupported pixel sizes, including 6 and 8, load as 4 for both near and distant glow. Supported sizes stay as they are. Other settings, masks, links and item overrides stay intact, and updating won't replace your setup with the Default look. Loading leaves the original file alone; saving or exporting writes the corrected sizes.
+Smaller pixels can be a little more demanding to render, so keep that in mind if you're having performance issues.
 
-If Fluorescent can't read a settings or mask file, it leaves the file alone and keeps the current setup when reloading. The menu tells you which file needs attention. Restore or repair it, then press **F10** to reload before saving changes to it.
+## Customizing Your Glow
 
-Saving a complete preset prepares all changed files together. If a write fails, the previous files are restored. If **Keep preset** fails, you can still retry or cancel the trial.
+There's quite a bit you can change, but I've tried to keep everything easy to find.
 
-I test Fluorescent with Minecraft 26.3's built-in Vulkan renderer and with OpenGL. The [validation report](VALIDATION.md) covers what passed and what still needs checking.
+### Blocks
 
-## Build and license
+Under **Blocks**, you can customize the glow of individual blocks, including their color, strength, shape, flare, and detail.
 
-Build the source with JDK 25 and `gradlew.bat build` on Windows or `./gradlew build` elsewhere.
+You can also use **Link blocks** to make different block variants share settings and compatible masks. Before linking them, you can choose which block's settings you want to use.
 
-Settings, masks, links and saved-data code live under `src/main/java/dev/stillbloom`. Rendering, menus, model inspection, compatibility and Minecraft hooks live under `src/client/java/dev/stillbloom`. Tests follow the same packages under `src/test/java`. The [source guide](SOURCE-GUIDE.md) explains the folders, what belongs in each one, and where classes have moved.
+### Held Items
 
-I release Fluorescent as Kivo under an [All Rights Reserved license](LICENSE). You can use the mod and share your own preset data. Reusing or redistributing the mod needs my written permission, apart from the exceptions in the license.
+You can give items their own glow, whether you're holding them or another player is.
 
+Just hold an item and open **Held Items → Edit items** to work with its textures.
+
+Held items and placed blocks have separate masks, so you don't have to use the same glow for both.
+
+### Glow Settings
+
+Under **Glow**, you can try different bloom shapes, including square, soft, diamond, and starburst.
+
+You can also adjust how the glow changes with distance.
+
+The **Performance** settings let you control how far bloom renders and how it fades away.
+
+### Resource Packs
+
+Fluorescent works with resource packs, but changing textures can sometimes affect where your painted masks line up.
+
+If you switch resource packs, I'd recommend checking your masks to make sure everything still looks right.
+
+The painter doesn't support placed liquids or special geometry without an editable block model.
+
+## Saving and Sharing Looks
+
+You can save your current setup as a look and come back to it whenever you want.
+
+Looks can include your glow settings, painted masks, block links, and held-item settings.
+
+You can also share your looks with other people using share codes.
+
+When importing a look, you'll get the chance to preview it before applying anything.
+
+If you change your mind after applying a look, **Undo** can bring back your previous setup.
+
+## Troubleshooting
+
+If Fluorescent has trouble reading one of your settings or mask files, it won't overwrite the file.
+
+The menu should tell you which file is causing the problem. Once you've fixed or restored it, press **F10** to reload your settings before saving anything.
+
+If something goes wrong while saving a complete preset, Fluorescent will try to restore your previous files.
+
+## Compatibility and Testing
+
+I've tested Fluorescent with Minecraft 26.3's built-in Vulkan renderer and OpenGL.
+
+You can check the [validation report](VALIDATION.md) to see what's been tested and what still needs checking.
+
+## Building from Source
+
+If you want to build Fluorescent yourself, you'll need JDK 25.
+
+On Windows:
+
+```bash
+gradlew.bat build
+```
+
+On other systems:
+
+```bash
+./gradlew build
+```
+
+I've also included a [source guide](SOURCE-GUIDE.md) if you want to look through the code and see how everything is organized.
+
+## License
+
+Fluorescent is a project I release under the name **Kivo**.
+
+It's covered by an [All Rights Reserved license](LICENSE).
+
+You're free to use the mod and share your own presets, but redistributing or reusing the mod itself requires my written permission unless the license says otherwise.
