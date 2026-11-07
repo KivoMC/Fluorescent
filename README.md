@@ -1,4 +1,4 @@
-# Fluorescent for Minecraft 26.3
+# Fluorescent 2.0.0 for Minecraft 26.3
 
 Fluorescent is a Minecraft mod I've been working on that adds customizable pixelated bloom to the game.
 
@@ -15,7 +15,7 @@ You'll need:
 - Fabric API for 26.3
 - Java 25
 
-Drop the Fluorescent JAR into your `mods` folder and launch the game.
+Drop `fluorescent-2.0.0.jar` into your `mods` folder and launch the game. Keep only one Fluorescent or Still Bloom JAR installed.
 
 Sodium is optional.
 
@@ -35,7 +35,7 @@ If you've made changes, you can preview the Default look using **Try in world** 
 
 Any looks you've saved yourself will stay in **Saved**.
 
-A few of my masks were made using Refined Torches textures. You don't need that resource pack, but I'd recommend it if you want those masks to line up properly.
+A few of my masks were made using Refined Torches textures. You don't need that resource pack, but I'd recommend it if you want those masks to line up properly. Some included patterns also use Enderscape blocks and need that mod's textures.
 
 ## Getting Started
 
@@ -160,3 +160,4 @@ Fluorescent is a project I release under the name **Kivo**.
 It's covered by an [All Rights Reserved license](LICENSE).
 
 You're free to use the mod and share your own presets, but redistributing or reusing the mod itself requires my written permission unless the license says otherwise.
+

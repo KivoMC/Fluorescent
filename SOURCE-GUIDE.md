@@ -1,4 +1,4 @@
-# Fluorescent source guide
+# Fluorescent 2.0.0 source guide
 
 Fluorescent is a client-only Fabric mod for Minecraft 26.3, built with Java 25. The source download includes the code, resources, Gradle wrapper and automated tests. You can build it without my local worlds, settings or launch scripts.
 
@@ -50,7 +50,7 @@ tools/format_java.py     Optional Java formatting helper
 
 There are 104 production Java files: 15 common and 89 client. Another 78 files are tests and aren't included in the mod JAR. Of the production files, 30 are Minecraft accessors and integration hooks. Each targets a specific part of Minecraft, so they stay separate.
 
-The [class inventory](docs/source-relocations.md) shows where each original class lives now. The [rebuild and folder cleanup report](docs/rebuild-fixes-report.md) covers the latest changes.
+The [class inventory](docs/source-relocations.md) shows where each original class lives now. The [rebuild investigation](docs/rebuild-fixes-report.md) explains the texture-cache and held-item resize fixes.
 
 ## Where things belong
 
@@ -83,3 +83,9 @@ Formatting is not a Gradle dependency. Run `gradlew.bat build` after changes. Ke
 Rendering changes need in-game checks too. A passing build can't tell you whether the glow looks right. Compare pixel sizes 2/3/4, painted blocks and held items, smoothness, distance sizing, weather, resource reloads and resizing on the supported backends. After changing data or menus, check saved presets and restart the game. The [validation report](VALIDATION.md) lists what passed for this version and what still needs testing.
 
 The full development checkout keeps older comparison and in-game test scripts under `tools`. They need local test files, so I leave them out of the source download. You don't need them to build the mod or run its automated tests.
+
+## Writing
+
+Keep explanations simple and direct, like the README. Use first person when talking about my work and speak to the reader as "you" when giving instructions. Don't invent experiences or reasons for a decision.
+
+Java comments should be short first-person notes about why the code works that way. Leave out comments that just repeat the code. Keep technical identifiers, license notices, credits and any AI disclosures intact.

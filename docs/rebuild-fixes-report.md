@@ -1,6 +1,6 @@
-# Rebuild fixes and folder cleanup — rc.24
+# Rebuild fixes included in Fluorescent 2.0.0
 
-This update fixes the two issues found in the [rc.23 rebuild investigation](held-item-rebuild-audit.md). I also removed an extra package layer and cleaned up the Java comments. Work starts from checkpoint `19d8d25` on `fix/held-item-rebuilds`. The earlier class cleanup is left alone, along with settings, masks, presets and shader calculations.
+This report explains the two fixes from the [held-item rebuild investigation](held-item-rebuild-audit.md). I also removed an extra package layer and cleaned up the Java comments. The measurements below were taken during development, before the 2.0.0 version change. They identify the before and after builds by their hashes in the [recorded results](rebuild-fixes-validation.json); they are not new 2.0.0 performance measurements.
 
 ## Rebuild fixes
 
@@ -10,9 +10,9 @@ This update fixes the two issues found in the [rc.23 rebuild investigation](held
 
 **Held-item resizing:** The old code waited before shrinking, then used the crop size at that moment. It left none of the spare room used when growing a target. A lantern's target would shrink and then need to grow again as the walking animation moved it. The new code remembers the largest width and height during that wait and keeps one aligned bucket of spare room. It still gives back unused space instead of keeping every item at its largest-ever size. Crop origin, pixel-grid alignment, glow padding and source rendering are unchanged.
 
-The final build ran the same test with copied settings as rc.23:
+The before and after builds ran the same test with copied settings:
 
-| Check | rc.23 | rc.24 |
+| Check | Before fixes | After fixes |
 | --- | --- | --- |
 | World intermediate allocations when looking away/back with a lantern | 10 | 0 |
 | World intermediate allocations during the empty-hand look-away sequence | 15 | 0 |
@@ -51,10 +51,10 @@ I kept the test folder. Its 78 source files now run 381 checks, including eight 
 
 The comment review covered `src` and the tracked development checks: 355 comment groups in total. It rewrote 327 as short first-person notes and removed 28 descriptions that repeated the code. Source code accounts for 320 rewrites and all 28 removals; the other seven rewrites are in development check tools. Unneeded Javadoc is gone, while useful ownership and sampling notes and the historical reference artifact hash stay. There were no Java license or attribution notices to remove. The project license is byte-identical.
 
-The comment edit itself was checked to preserve every executable token and string literal. Package/comment-only compiled comparison matched 4,012 entries with no unexplained differences. The later overflow-to-Minecraft refinement changes five reviewed allocator entries; 4,009 entries still match the pre-cleanup fix build. Only five production Java bodies differ from rc.23 after normalizing imports, package names and comments: `ScopedAllocator`, `BloomTargetDescriptor`, `BloomRenderer`, `HeldItemBounds` and `HeldItemRenderer`. Both new private helpers stay nested in existing files; the production file count remains 104.
+The comment edit itself was checked to preserve every executable token and string literal. Package/comment-only compiled comparison matched 4,012 entries with no unexplained differences. The later overflow-to-Minecraft refinement changes five reviewed allocator entries; 4,009 entries still match the pre-cleanup fix build. Only five production Java bodies differ from the build before these fixes after normalizing imports, package names and comments: `ScopedAllocator`, `BloomTargetDescriptor`, `BloomRenderer`, `HeldItemBounds` and `HeldItemRenderer`. Both new private helpers stay nested in existing files; the production file count remains 104.
 
 ## Verification and limits
 
-The clean Gradle build and full test suite pass: **381 tests**, zero failures, errors or skips. New checks cover idle expiry, memory/entry limits, reuse of overflow, simultaneous target separation, cleanup after failures, format-aware byte accounting, and the lantern animation's resize case. All 78 shader files and bundled setup data are unchanged. The world, weather and held-item graphs match rc.23 across 6,912 combinations (20,736 descriptions). Entrypoints, mixins, package paths and the generated client-only manifest are checked against the final JAR.
+The clean Gradle build and full test suite pass: **381 tests**, zero failures, errors or skips. New checks cover idle expiry, memory/entry limits, reuse of overflow, simultaneous target separation, cleanup after failures, format-aware byte accounting, and the lantern animation's resize case. All 78 shader files and bundled setup data are unchanged. The world, weather and held-item graphs match the build before these fixes across 6,912 combinations (20,736 descriptions). Entrypoints, mixins, package paths and the generated client-only manifest are checked against the final JAR.
 
-The [validation report](../VALIDATION.md) covers the final in-game checks and source-download build. Tests used temporary worlds and copied settings, leaving my main Modrinth instance alone. Diagnostic Java flags and an inactivity cap mean the rebuild run can't be used as an FPS benchmark. Normal gameplay with the full mod/pack list, multiplayer held items and longer sessions still needs checking before release.
+The [validation report](../VALIDATION.md) separates the current build checks from those earlier in-game tests. Tests used temporary worlds and copied settings, leaving my main Modrinth instance alone. Diagnostic Java flags and an inactivity cap mean the rebuild run can't be used as an FPS benchmark. Normal gameplay with the full mod/pack list, multiplayer held items and longer sessions still needs checking before release.

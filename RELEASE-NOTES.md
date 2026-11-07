@@ -1,13 +1,11 @@
 # Fluorescent 2.0.0 for Minecraft 26.3
 
-This update fixes two cases where bloom textures were being rebuilt unnecessarily.
+Fluorescent adds bloom to the parts of block and item textures you paint. You can keep the glow pixelated, soften it, or give individual blocks their own color and shape.
 
-- Temporary bloom textures can now be reused when you briefly look away or switch items. The cache has a memory limit; anything beyond it still uses Minecraft's normal pool.
-- Held-item render targets keep enough room for the walking animation, so they don't shrink too tightly and immediately need to grow again.
-- The extra package-level `client` folder is gone. Gradle's source folders and the existing groups stay where they are.
-- Java comments are shorter first-person notes. Comments that only repeated the code are gone.
-- Eight new regression tests bring the total to 381. All pass.
+I've included a Default look with painted masks, linked blocks and held-item settings, so you can try it without setting everything up yourself. Press F7 to open the menu. From there, you can edit the glow, paint masks, or save and share your own looks.
 
-Shaders, lighting calculations, defaults, masks, saved data and controls are unchanged. You don't need to reset or migrate your settings. Replace the previous Fluorescent JAR to try this version. The checks show fewer texture allocations, but I haven't measured an FPS improvement.
+You'll need Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API for 26.3, and Java 25. Put `fluorescent-2.0.0.jar` in your `mods` folder. If you're replacing another Fluorescent JAR, remove that JAR first so only one is installed. Sodium is optional.
 
-OpenGL and Vulkan passed the rendering tests with diagnostic Java flags. A normal launch of an intermediate build crashed in `jvm.dll` during resource reload. That might just be my pc, but I have yet to figure it out.
+The [README](README.md) covers the controls and how to get started. The [validation report](VALIDATION.md) records the build and rendering checks, including an unresolved Java crash during an earlier resource-reload test. Longer play sessions with normal Java settings still need checking.
+
+I release Fluorescent as Kivo under an [All Rights Reserved license](LICENSE). You can use the mod and share your own presets under the permissions in that license.

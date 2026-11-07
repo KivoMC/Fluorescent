@@ -1,6 +1,6 @@
 # Production class inventory and relocation list
 
-I checked the original classes against Git checkpoint `a8b499a` (rc.18). Every original production Java file is listed below, with paths starting at the project root. This list began with the rc.19 moves and now includes the rc.23 helper changes and rc.24 package cleanup. Tests moved with the code they cover.
+This is the class map for Fluorescent 2.0.0. I kept the original paths from checkpoint `a8b499a` beside their current locations so you can find code that moved during development. Paths start at the project root. Tests live with the packages they cover.
 
 | Original class/path | New file | Responsibility |
 | --- | --- | --- |
@@ -74,7 +74,7 @@ I checked the original classes against Git checkpoint `a8b499a` (rc.18). Every o
 | `src/main/java/dev/stillbloom/mixin/LevelChunkSectionMixin.java` | [src/client/java/dev/stillbloom/mixin/LevelChunkSectionMixin.java](../src/client/java/dev/stillbloom/mixin/LevelChunkSectionMixin.java) | Track section block-data revisions for cached source scanning. |
 | `src/main/java/dev/stillbloom/mixin/LevelWeatherMixin.java` | [src/client/java/dev/stillbloom/mixin/LevelWeatherMixin.java](../src/client/java/dev/stillbloom/mixin/LevelWeatherMixin.java) | Capture weather scene inputs without changing displayed precipitation. |
 | `src/main/java/dev/stillbloom/LinkedMaskEdits.java` | [src/main/java/dev/stillbloom/mask/LinkedMaskEdits.java](../src/main/java/dev/stillbloom/mask/LinkedMaskEdits.java) | Editor transactions only. Rendering continues to read ordinary per-block masks. |
-| `src/main/java/dev/stillbloom/LookPreview.java` | Removed in rc.21 | I removed the procedural torch illustration and its cache when simplifying Looks. Real world trials remain. |
+| `src/main/java/dev/stillbloom/LookPreview.java` | Removed during development | I removed the procedural torch illustration and its cache when simplifying Looks. Real world trials remain. |
 | `src/main/java/dev/stillbloom/ui/MaskCanvasTransform.java` | [src/client/java/dev/stillbloom/gui/layout/MaskCanvasTransform.java](../src/client/java/dev/stillbloom/gui/layout/MaskCanvasTransform.java) | UI-only texture viewport math. The image may grow beyond the viewport; input never does. |
 | `src/main/java/dev/stillbloom/ui/MaskEditorLayout.java` | [src/client/java/dev/stillbloom/gui/layout/MaskEditorLayout.java](../src/client/java/dev/stillbloom/gui/layout/MaskEditorLayout.java) | Canvas geometry only; the tool rail scrolls while the texture remains fixed. |
 | `src/main/java/dev/stillbloom/MaskTexture.java` | [src/client/java/dev/stillbloom/render/source/MaskTexture.java](../src/client/java/dev/stillbloom/render/source/MaskTexture.java) | Lossless uint storage in RGBA8, accessible on both Blaze3D backends. |
@@ -132,14 +132,14 @@ I checked the original classes against Git checkpoint `a8b499a` (rc.18). Every o
 
 `JsonFiles` is unchanged in location. The other 117 retained original classes moved. No runtime features were removed.
 
-## rc.22 ownership cleanup
+## Helper ownership
 
-The current destinations above include these internal moves: `BloomIdleState` is now `BloomActivity.IdleState`; `GeometryDirtyRows` is `GeometryTexture.DirtyRows`; `UniformEmission` is `TextureGeometry.Emission`. Runtime history weighting is in `BloomHistory.historyWeight`; the CPU brightness reference moved to `src/test/java/dev/stillbloom/render/BrightnessHistory.java`. The earlier 117-file relocation count describes rc.19, not the current file count. That pass left 114 production Java files. The rc.23 consolidation below brings the current count to 104.
+The current destinations above include these internal moves: `BloomIdleState` is now `BloomActivity.IdleState`; `GeometryDirtyRows` is `GeometryTexture.DirtyRows`; `UniformEmission` is `TextureGeometry.Emission`. Runtime history weighting is in `BloomHistory.historyWeight`; the CPU brightness reference moved to `src/test/java/dev/stillbloom/render/BrightnessHistory.java`. The earlier 117-file relocation count describes the first package move, not the current file count. After the helper changes below, there are 104 production Java files.
 
-## rc.23 consolidation
+## Shared helpers
 
 Nine helpers now live as static nested classes beside the code that owns their lifetime. The weather graph adapter is part of `BloomGraph`. All destinations in the table above have been updated.
 
-## rc.24 package cleanup
+## Client packages
 
 The extra package-level `client` folder is gone. All 89 client source files and 55 matching test files move up one package layer, while the source roots and functional groups stay in place. The paths above are up to date. The [rebuild fixes and folder cleanup report](rebuild-fixes-report.md) covers the fixes, comment edits and checks.

@@ -61,7 +61,7 @@ class BlockTextureLinkTest {
     }
 
     @Test
-    void rebuildingAnRc10GroupSharesBothPaintedStatesWithoutPaintingUnlitStates() {
+    void rebuildingAnExistingGroupSharesBothPaintedStatesWithoutPaintingUnlitStates() {
         var textures = bulbs();
         var m = new TextureMasks();
         String lit = texture("", "_lit"), powered = texture("", "_lit_powered");
@@ -72,7 +72,7 @@ class BlockTextureLinkTest {
         m.setOverride(SOURCE, style);
         BlockLinks.link(m, textures.keySet(), SOURCE, false, Map.of());
         assertTrue(m.group(SOURCE).textureLinks.isEmpty());
-        var path = dir.resolve("rc10.json");
+        var path = dir.resolve("existing-group.json");
         assertTrue(m.save(path));
         m = TextureMasks.load(path);
         BlockLinks.link(m, textures.keySet(), SOURCE, false, textures);

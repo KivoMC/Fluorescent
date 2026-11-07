@@ -1,13 +1,24 @@
 {
-  "version": "0.30.0-rc.24+mc26.3",
-  "build": {
-    "version": "0.30.0-rc.24+mc26.3",
-    "jar_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+  "version": "2.0.0",
+  "current_release_checks": {
+    "version": "2.0.0",
+    "jar_sha256": "eaa1946829cafa79e23dd495e3569c7436ab82e80c56d72c23b30122d8bcb46b",
     "original_26_2_files_verified": 250,
     "tests": 381,
     "failures": 0,
     "errors": 0,
-    "skipped": 0
+    "skipped": 0,
+    "jar_filename": "fluorescent-2.0.0.jar",
+    "reference_artifact_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+    "identical_jar_entries": 304,
+    "total_jar_entries": 305,
+    "only_changed_jar_entry": "fabric.mod.json",
+    "only_changed_metadata_field": "version",
+    "unchanged_compiled_classes": 219,
+    "verified_mixins": 30,
+    "entrypoint_resolves": true,
+    "license_unchanged": true,
+    "new_in_game_tests_run": false
   },
   "source_scope": {
     "unchanged_production_bodies_after_comment_and_package_normalization": 99,
@@ -49,7 +60,7 @@
     "tool_rewritten": 7
   },
   "native": {
-    "rc24-final-gl-diagnostic": {
+    "after_fixes_opengl_diagnostic": {
       "manifest": {
         "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
         "baseline_without_fluorescent": false,
@@ -125,7 +136,7 @@
         ]
       }
     },
-    "rc24-final-vk": {
+    "after_fixes_vulkan_diagnostic": {
       "manifest": {
         "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
         "baseline_without_fluorescent": false,
@@ -203,7 +214,7 @@
     }
   },
   "movement_counters": {
-    "rc23-held-detail": {
+    "before_fixes_movement": {
       "manifest": {
         "candidate_sha256": "33641a6bb5d30d5b4632ce89ed872a96ab2b4a9d630385a3af91aa1d0496fdf6",
         "baseline_without_fluorescent": false,
@@ -463,7 +474,7 @@
         }
       ]
     },
-    "rc24-final-detail": {
+    "after_fixes_movement": {
       "manifest": {
         "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
         "baseline_without_fluorescent": false,
@@ -674,7 +685,7 @@
   },
   "release_ready": false,
   "normal_runtime_limitation": {
-    "label": "rc24-final-gl",
+    "label": "intermediate_opengl_resource_reload",
     "intermediate_candidate_sha256": "85861b35f3812c524420b28ef03ccc1b47b831da9bf2b33f430a30a6df7992d7",
     "stage": "Resource reload; earlier world, menu and weather cases completed.",
     "windows_fault_module": "jvm.dll",
@@ -688,5 +699,14 @@
     "OpenGL weather depth readback was skipped; Vulkan depth and both weather-color comparisons passed.",
     "The real Modrinth profile and separate 26.2 source were not modified.",
     "Longer normal-runtime playtesting with the complete mod/resource-pack list remains necessary."
-  ]
+  ],
+  "reference_build": {
+    "jar_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+    "original_26_2_files_verified": 250,
+    "tests": 381,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "Earlier development measurements, identified by artifact hashes. These are not new performance measurements of the 2.0.0 package."
 }

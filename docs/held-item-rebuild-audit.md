@@ -1,6 +1,6 @@
-# Held-item movement and rebuild audit — rc.23
+# Earlier held-item movement and rebuild investigation
 
-This audit looks at commit `67d875d40070a429300457e96f32bafb53e3f448` on `fix/held-item-rebuilds`, November 6, 2026. It follows the hitches I noticed while holding different items and moving. This was a check of the existing release, with no changes to production code or release files.
+This audit looks at commit `67d875d40070a429300457e96f32bafb53e3f448` on `fix/held-item-rebuilds`, November 6, 2026. It follows the hitches I noticed while holding different items and moving. This records the behavior before the [rebuild fixes](rebuild-fixes-report.md), with no changes to production code or release files during the investigation. Code locations below refer to the inspected commit.
 
 ## Findings
 
@@ -44,14 +44,14 @@ An earlier test included a campfire, but it didn't activate held bloom with the 
 
 Four separate OpenGL/Sodium in-game runs completed and exited with code 0:
 
-| Evidence directory under `work/` | Coverage |
+| Check | Coverage |
 | --- | --- |
-| `evidence-rc23-held-motion` | Standing, walking, first equip, re-equip, torch walking/sprinting, turning, switching. Main held targets, chains, geometry and shader counters. |
-| `evidence-rc23-held-targets` | Same sequence with intermediate-target allocation counters. |
-| `evidence-rc23-held-multiple` | Added lantern, soul lantern, campfire, and look-away/back phases. |
-| `evidence-rc23-held-detail` | Longer lantern walking, a second warmed walk, soul and copper lanterns, and look-away/back with a lantern and an empty hand. Intermediate allocations distinguished by renderer call stack. |
+| Item movement | Standing, walking, first equip, re-equip, torch walking/sprinting, turning, switching. Main held targets, chains, geometry and shader counters. |
+| Intermediate texture reuse | Same sequence with intermediate-target allocation counters. |
+| Item switching | Added lantern, soul lantern, campfire, and look-away/back phases. |
+| Longer walking and look-away tests | Longer lantern walking, a second warmed walk, soul and copper lanterns, and look-away/back with a lantern and an empty hand. Intermediate allocations distinguished by renderer call stack. |
 
-Each directory contains `manifest.json`, `motion.json`, `result.json`, and `runtime.log`. Manifests record the candidate JAR hash and probe/fixture hashes. All runs used the verified rc.23 JAR, SHA-256 `33641a6bb5d30d5b4632ce89ed872a96ab2b4a9d630385a3af91aa1d0496fdf6`.
+The local records include `manifest.json`, `motion.json`, `result.json`, and `runtime.log`. Their manifests record the JAR and test-tool hashes. All runs used the same build from before the fixes, SHA-256 `33641a6bb5d30d5b4632ce89ed872a96ab2b4a9d630385a3af91aa1d0496fdf6`.
 
 The temporary profiles used copies of my current Fluorescent settings, masks and item overrides, with Refined Torches 2.1, Punchy 3.1b, Respackopts, LibJF, Sodium and Fabric API. The generated Punchy configuration matched my main profile byte-for-byte. Settings included pixel size 3, approximately 0.499 smoothness, held bloom on, distance pixels off, 16-chunk render distance, 8-chunk simulation distance, view bobbing on, and a `1920 × 1009` framebuffer. The walking lane was built in a temporary world copy. My main Modrinth instance, installed mod and worlds were left alone.
 
@@ -59,8 +59,10 @@ These are rebuild/allocation checks, not FPS benchmarks. The in-game checks used
 
 The test instance left out unrelated mods and other resource packs. It logged Refined Torches particle-condition errors about `particlesOnThirdPerson`, plus offline-service and Windows performance-counter warnings. No Fluorescent rendering failure was logged. This setup doesn't fully reproduce my main profile or exact location.
 
-This audit didn't change production code or produce a new JAR or source package. The temporary probe was compiled against the game and build being tested, and all four runs reached their completion marker. There was no new Gradle build or unit-test run; the earlier rc.23 results are separate from this audit.
+This audit didn't change production code or produce a new JAR or source package. The temporary probe was compiled against the game and build being tested, and all four runs reached their completion marker. There was no new Gradle build or unit-test run; the build and unit-test results are separate from this investigation.
 
-## Remaining verification
+## Follow-up from this investigation
 
 At the end of this audit, the tests hadn't fully reproduced the repeated hitch across all the items or confirmed a single cause. The two clearest things to fix were intermediate-texture reuse and the lantern's shrink/regrow sequence. After either fix, repeat the allocation counts, compare framebuffer output, check retained GPU memory and normal-runtime frame times, then test my exact scene with the full mod and resource-pack list. Also check resource reload, resize, item switching, other players' items and Vulkan before releasing a change to resource lifetimes.
+
+The two fixes and their follow-up measurements are in the [rebuild report](rebuild-fixes-report.md). See the [current validation report](../VALIDATION.md) for the checks that still need doing.

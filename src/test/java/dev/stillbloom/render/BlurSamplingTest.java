@@ -118,7 +118,7 @@ class BlurSamplingTest {
         return config;
     }
 
-    // I allow only rc.6's straight-blur sampling change when comparing frozen graphs.
+    // I allow only the straight-blur sampling change when comparing frozen graphs.
     static PostChainConfig withNearestStraightBlurInputs(PostChainConfig frozen) {
         var passes = new ArrayList<PostChainConfig.Pass>();
         for (var pass : frozen.passes()) {
