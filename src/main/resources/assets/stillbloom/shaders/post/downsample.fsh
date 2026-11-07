@@ -1,0 +1,11 @@
+#version 330
+#extension GL_ARB_separate_shader_objects : require
+uniform sampler2D InSampler;
+layout(std140) uniform SamplerInfo { vec2 OutSize; vec2 InSize; };
+layout(location=0) in vec2 texCoord;
+layout(location=0) out vec4 fragColor;
+vec3 sampleAt(ivec2 p) { return texelFetch(InSampler, clamp(p, ivec2(0), ivec2(InSize)-1), 0).rgb; }
+void main() {
+    ivec2 p = ivec2(floor(texCoord * OutSize)) * 2;
+    fragColor = vec4((sampleAt(p) + sampleAt(p+ivec2(1,0)) + sampleAt(p+ivec2(0,1)) + sampleAt(p+ivec2(1,1))) * 0.25, 1.0);
+}

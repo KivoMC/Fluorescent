@@ -1,0 +1,8 @@
+{
+  "key.category.stillbloom.controls": "Fluorescent",
+  "key.stillbloom.settings": "Bloom settings",
+  "key.stillbloom.toggle": "Toggle bloom",
+  "key.stillbloom.size": "Cycle bloom pixel size",
+  "key.stillbloom.reload": "Reload bloom settings",
+  "key.stillbloom.pick": "Edit targeted block bloom (preview)"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "stillbloom",
+  "version": "${version}",
+  "name": "Fluorescent",
+  "authors": ["Kivo"],
+  "license": "LicenseRef-Fluorescent",
+  "description": "Customizable pixelated and smooth bloom, texture masks, and in-game editing.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.stillbloom.StillBloomClient"
+    ]
+  },
+  "mixins": [
+    "stillbloom.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

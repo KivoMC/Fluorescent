@@ -1,0 +1,692 @@
+{
+  "version": "0.30.0-rc.24+mc26.3",
+  "build": {
+    "version": "0.30.0-rc.24+mc26.3",
+    "jar_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+    "original_26_2_files_verified": 250,
+    "tests": 381,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_scope": {
+    "unchanged_production_bodies_after_comment_and_package_normalization": 99,
+    "focused_changes": [
+      "BloomRenderer.java",
+      "BloomTargetDescriptor.java",
+      "HeldItemBounds.java",
+      "HeldItemRenderer.java",
+      "ScopedAllocator.java"
+    ],
+    "first_person_comments": 327,
+    "source_roots_unchanged": true
+  },
+  "compiled_and_resource_comparison": {
+    "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+    "compiled_comparison_to_pre_cleanup_fix": "APPROVED dev/stillbloom/client/render/ScopedAllocator#acquire(Lcom/mojang/blaze3d/resource/ResourceDescriptor;)Ljava/lang/Object;\nAPPROVED dev/stillbloom/client/render/ScopedAllocator#release(Lcom/mojang/blaze3d/resource/ResourceDescriptor;Ljava/lang/Object;)V\nAPPROVED dev/stillbloom/client/render/ScopedAllocator$TargetPool#put(Lcom/mojang/blaze3d/resource/ResourceDescriptor;Ljava/lang/Object;JJ)V\nAPPROVED dev/stillbloom/client/render/ScopedAllocator$TargetPool#put(Lcom/mojang/blaze3d/resource/ResourceDescriptor;Ljava/lang/Object;JJLcom/mojang/blaze3d/resource/GraphicsResourceAllocator;)V\nAPPROVED dev/stillbloom/client/render/ScopedAllocator$TargetPool#release(Lcom/mojang/blaze3d/resource/GraphicsResourceAllocator;Lcom/mojang/blaze3d/resource/ResourceDescriptor;Ljava/lang/Object;)V\nMATCHED 4009; APPROVED 5; UNEXPECTED 0",
+    "reviewed_changes": "Five entries implementing native-pool overflow fallback, added after the package/comment-only comparison passed with zero changes.",
+    "unchanged_shaders": 78,
+    "unchanged_resources": 83,
+    "moved_client_sources": 89,
+    "client_only_classes": 182,
+    "mixins": 30,
+    "tests": 381,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "graphs": {
+    "settings_combinations": 6912,
+    "identical_graphs": 20736,
+    "baseline_sha256": "0103ffd380bc08e85e9615cc53f0de8217aa920c3cfeb1392e9dc9a5bf9d0bd1",
+    "candidate_sha256": "0103ffd380bc08e85e9615cc53f0de8217aa920c3cfeb1392e9dc9a5bf9d0bd1"
+  },
+  "comments": {
+    "reviewed": 355,
+    "rewritten": 327,
+    "removed": 28,
+    "source_rewritten": 320,
+    "tool_rewritten": 7
+  },
+  "native": {
+    "rc24-final-gl-diagnostic": {
+      "manifest": {
+        "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+        "baseline_without_fluorescent": false,
+        "backend": "opengl",
+        "sodium": true,
+        "scope": "2/3/4 grids, distance sizing, smoothness, shapes, paint, held items, menu, weather, reload, odd resize, and movement.",
+        "check": "rebuild-fixes-render",
+        "diagnostic_vm": [
+          "-XX:TieredStopAtLevel=1",
+          "-XX:ActiveProcessorCount=2"
+        ]
+      },
+      "result": {
+        "exit_code": 0,
+        "owned_pid": 10420,
+        "elapsed_seconds": 91.45299999997951,
+        "complete": true,
+        "observations": [
+          "PORT_SHADERS_COMPILED 114",
+          "PORT_CASE world4",
+          "PORT_IMAGE world4-world-after changed=80299 size=1281x721",
+          "PORT_CASE_DONE world4 passes=1474",
+          "PORT_CASE world2",
+          "PORT_IMAGE world2-world-after changed=79219 size=1281x721",
+          "PORT_CASE_DONE world2 passes=1506",
+          "PORT_CASE distance",
+          "PORT_IMAGE distance-world-after changed=89403 size=1281x721",
+          "PORT_CASE_DONE distance passes=1536",
+          "PORT_CASE held",
+          "PORT_IMAGE held-world-after changed=80490 size=1281x721",
+          "PORT_IMAGE held-held-after changed=36061 size=1281x721",
+          "PORT_CASE_DONE held passes=2628",
+          "PORT_CASE menu",
+          "PORT_MENU_INPUT left-click-and-text passed",
+          "PORT_CASE_DONE menu passes=2157",
+          "PORT_CASE rain-classic",
+          "PORT_IMAGE rain-classic-world-after changed=76136 size=1281x721",
+          "PORT_CASE_DONE rain-classic passes=3561",
+          "PORT_CASE rain-oit",
+          "PORT_WEATHER_DEPTH skipped-opengl-readback-state",
+          "PORT_IMAGE weather-compare-ported changed=0 size=1281x721",
+          "PORT_IMAGE rain-oit-world-after changed=76394 size=1281x721",
+          "PORT_CASE_DONE rain-oit passes=3336",
+          "PORT_CASE reload",
+          "PORT_IMAGE reload-world-after changed=76414 size=1281x721",
+          "PORT_CASE_DONE reload passes=5184",
+          "PORT_CASE resize",
+          "PORT_IMAGE resize-world-after changed=78523 size=1023x767",
+          "PORT_CASE_DONE resize passes=3546",
+          "PORT_CASE world3-pixelated",
+          "PORT_IMAGE world3-pixelated-world-after changed=78408 size=1023x767",
+          "PORT_CASE_DONE world3-pixelated passes=3591",
+          "PORT_CASE world3-smooth",
+          "PORT_IMAGE world3-smooth-world-after changed=76553 size=1023x767",
+          "PORT_CASE_DONE world3-smooth passes=3576",
+          "PORT_CASE world3-diamond",
+          "PORT_IMAGE world3-diamond-world-after changed=118950 size=1023x767",
+          "PORT_CASE_DONE world3-diamond passes=3561",
+          "PORT_CASE world3-starburst",
+          "PORT_IMAGE world3-starburst-world-after changed=57825 size=1023x767",
+          "PORT_CASE_DONE world3-starburst passes=2184",
+          "PORT_CASE distance4to3",
+          "PORT_IMAGE distance4to3-world-after changed=87181 size=1023x767",
+          "PORT_CASE_DONE distance4to3 passes=3543",
+          "PORT_CASE held4to3",
+          "PORT_IMAGE held4to3-world-after changed=86854 size=1023x767",
+          "PORT_IMAGE held4to3-held-after changed=15276 size=1023x767",
+          "PORT_CASE_DONE held4to3 passes=3471",
+          "PORT_CASE moving3",
+          "PORT_IMAGE moving3-world-after changed=80969 size=1023x767",
+          "PORT_CASE_DONE moving3 passes=3561",
+          "PORT_SMOKE_COMPLETE world=15 held=2"
+        ]
+      }
+    },
+    "rc24-final-vk": {
+      "manifest": {
+        "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+        "baseline_without_fluorescent": false,
+        "backend": "vulkan",
+        "sodium": true,
+        "scope": "2/3/4 grids, distance sizing, smoothness, shapes, paint, held items, menu, weather, reload, odd resize, and movement.",
+        "check": "rebuild-fixes-render",
+        "diagnostic_vm": [
+          "-XX:TieredStopAtLevel=1",
+          "-XX:ActiveProcessorCount=2"
+        ]
+      },
+      "result": {
+        "exit_code": 0,
+        "owned_pid": 13792,
+        "elapsed_seconds": 92.20400000002701,
+        "complete": true,
+        "observations": [
+          "PORT_SHADERS_COMPILED 114",
+          "PORT_CASE world4",
+          "PORT_IMAGE world4-world-after changed=80380 size=1281x721",
+          "PORT_CASE_DONE world4 passes=1880",
+          "PORT_CASE world2",
+          "PORT_IMAGE world2-world-after changed=79143 size=1281x721",
+          "PORT_CASE_DONE world2 passes=1944",
+          "PORT_CASE distance",
+          "PORT_IMAGE distance-world-after changed=89344 size=1281x721",
+          "PORT_CASE_DONE distance passes=1952",
+          "PORT_CASE held",
+          "PORT_IMAGE held-world-after changed=80493 size=1281x721",
+          "PORT_IMAGE held-held-after changed=36058 size=1281x721",
+          "PORT_CASE_DONE held passes=3222",
+          "PORT_CASE menu",
+          "PORT_MENU_INPUT left-click-and-text passed",
+          "PORT_CASE_DONE menu passes=2607",
+          "PORT_CASE rain-classic",
+          "PORT_IMAGE rain-classic-world-after changed=79315 size=1281x721",
+          "PORT_CASE_DONE rain-classic passes=3546",
+          "PORT_CASE rain-oit",
+          "PORT_IMAGE weather-compare-ported changed=0 size=1281x721",
+          "PORT_WEATHER_DEPTH changed=0",
+          "PORT_IMAGE rain-oit-world-after changed=78879 size=1281x721",
+          "PORT_CASE_DONE rain-oit passes=3336",
+          "PORT_CASE reload",
+          "PORT_IMAGE reload-world-after changed=78327 size=1281x721",
+          "PORT_CASE_DONE reload passes=5580",
+          "PORT_CASE resize",
+          "PORT_IMAGE resize-world-after changed=74607 size=1023x767",
+          "PORT_CASE_DONE resize passes=3546",
+          "PORT_CASE world3-pixelated",
+          "PORT_IMAGE world3-pixelated-world-after changed=73683 size=1023x767",
+          "PORT_CASE_DONE world3-pixelated passes=3576",
+          "PORT_CASE world3-smooth",
+          "PORT_IMAGE world3-smooth-world-after changed=75896 size=1023x767",
+          "PORT_CASE_DONE world3-smooth passes=3576",
+          "PORT_CASE world3-diamond",
+          "PORT_IMAGE world3-diamond-world-after changed=116276 size=1023x767",
+          "PORT_CASE_DONE world3-diamond passes=3546",
+          "PORT_CASE world3-starburst",
+          "PORT_IMAGE world3-starburst-world-after changed=55380 size=1023x767",
+          "PORT_CASE_DONE world3-starburst passes=2193",
+          "PORT_CASE distance4to3",
+          "PORT_IMAGE distance4to3-world-after changed=83954 size=1023x767",
+          "PORT_CASE_DONE distance4to3 passes=3567",
+          "PORT_CASE held4to3",
+          "PORT_IMAGE held4to3-world-after changed=84306 size=1023x767",
+          "PORT_IMAGE held4to3-held-after changed=15332 size=1023x767",
+          "PORT_CASE_DONE held4to3 passes=3330",
+          "PORT_CASE moving3",
+          "PORT_IMAGE moving3-world-after changed=81591 size=1023x767",
+          "PORT_CASE_DONE moving3 passes=3576",
+          "PORT_SMOKE_COMPLETE world=15 held=2"
+        ]
+      }
+    }
+  },
+  "movement_counters": {
+    "rc23-held-detail": {
+      "manifest": {
+        "candidate_sha256": "33641a6bb5d30d5b4632ce89ed872a96ab2b4a9d630385a3af91aa1d0496fdf6",
+        "baseline_without_fluorescent": false,
+        "backend": "opengl",
+        "sodium": true,
+        "scope": "Rebuild counters while holding and walking/sprinting/turning; copied current settings, Punchy, Refined Torches. Diagnostic JVM and 120 cap: not an FPS benchmark.",
+        "diagnostic_vm": [
+          "-XX:TieredStopAtLevel=1",
+          "-XX:ActiveProcessorCount=2"
+        ],
+        "fixture": {
+          "libjf-26.3.1.jar": "1b236e7f12ec4cf78e1c7db6406638492abab99f106f7af18d38a245e40e07e2",
+          "punchy-3.1b-fabric-26.3.jar": "422533a6f412c9f2f2c421f1a5e26e42825eebdf904b678c44e3f3230187de25",
+          "refined torches 2.1.zip": "825afca97394c797746c8dcefb9aa94a1cc4db5da03df175348fe07941289990",
+          "respackopts-26.3.0.jar": "9051b9cbe22ddc2d474bb206d6c2f96d21ca9c5d47efe69b1c60c981d016333f",
+          "stillbloom-items.json": "5417f465a5024656279882eb056e70822c324d1dd70820ce1dab44910d3c2f31",
+          "stillbloom-textures.json": "f6490ad0c738071a2b41ddfcee5322bcda595104da615bc753ce45b933ef13b2",
+          "stillbloom.json": "ff74cc981ff0028b09caa74e13aaa0fb0535d10d71fb01a100504acc358ee617"
+        },
+        "probe": {
+          "dev/stillbloom/MotionBench.java": "f43b47dde93cbdbc16424e65eeb12e3ba99521e822201adfbeb97dc51fcafe4b",
+          "motionprobe/BatchProbe.java": "9cc58c0c1c8427181f980ebf0a56b143210b7bd0d5f8579e2896e1be34ae4561",
+          "motionprobe/Chains.java": "aac4149ac37d7efdd532d1f1300a32ad05c0692e0725f6f8caef4b14de70cb07",
+          "motionprobe/CompileProbe.java": "28fafffa141f0b8196b6fdd5d89bbcd1e87618e90f7518d21b0de9d70b379229",
+          "motionprobe/FrameProbe.java": "50417578c2157cc2ff5a8690a7d2af8aa06a04813714fdfd28173d290fef7a96",
+          "motionprobe/GeometryProbe.java": "f6329d4af2fb10ba519c026df39756e5e3494fddd7bfdedb7f7c43e967b0e0b4",
+          "motionprobe/GroupProbe.java": "c4e160706a9b68f2361a60e20fa23820ef833188c96dd7698c996090b9266acc",
+          "motionprobe/HeldProbe.java": "ce42859244ee8aa68b623e0bd8843c0bf45e113ba012bb3640bc660a8288da8e",
+          "motionprobe/MaskProbe.java": "ed1cfe4711bbd86958fd187c3a68ffeeb31fff6ddb3c178f763425efea3943f9",
+          "motionprobe/SourceProbe.java": "9968546f256d63ceda91568468ac1a8691ca8cc6c9b3a830fcf7b905874cc268",
+          "motionprobe/TargetProbe.java": "e83b4549d0dd62d236b4b79f7d462bc84110a1ea0c0cdb75cbac80490764801f"
+        }
+      },
+      "result": {
+        "exit_code": 0,
+        "owned_pid": 46288,
+        "elapsed_seconds": 146.06199999997625,
+        "complete": true,
+        "observations": [
+          "PORT_MOTION {phase=warm-torch, frames=262, travel_blocks=0.0, frame_p50_ms=8.3372, frame_p95_ms=12.9442, frame_p99_ms=46.7373, frame_max_ms=918.1601, frames_over_16ms=7, refresh_max_ms=0.245, upload_total_ms=0.0, held_build_ms=2.0677000000000003, counts={chain_held=3, held_chains=3, held_full_reset=1, held_groups_processed=262, held_intermediate_allocations=15, held_target_allocations=3, held_targets_closed=2, held_vertex_allocations=1}, events=[11 target 0x0 -> 384x384 created, 11 held intermediate 128x128, 11 held intermediate 128x128, 11 held intermediate 128x128, 11 held intermediate 128x128, 11 held intermediate 384x384, 19 target 384x384 -> 384x768 resized, 19 held intermediate 128x256, 19 held intermediate 128x256, 19 held intermediate 128x256, 19 held intermediate 128x256, 19 held intermediate 384x768, 20 target 384x768 -> 768x768 resized, 20 held intermediate 256x256, 20 held intermediate 256x256, 20 held intermediate 256x256, 20 held intermediate 256x256, 20 held intermediate 768x768]}",
+          "PORT_MOTION {phase=walking-lantern, frames=3527, travel_blocks=126.64255608099499, frame_p50_ms=8.3366, frame_p95_ms=12.4103, frame_p99_ms=13.1892, frame_max_ms=59.5185, frames_over_16ms=11, refresh_max_ms=0.4306, upload_total_ms=4.1779, held_build_ms=1.7201, counts={chain_held=2, held_chains=2, held_groups_processed=3517, held_intermediate_allocations=15, held_target_allocations=2, held_targets_closed=2, held_vertex_allocations=1, snapshots=12}, events=[8 held intermediate 256x256, 8 held intermediate 256x256, 8 held intermediate 256x256, 8 held intermediate 256x256, 8 held intermediate 768x768, 38 target 768x768 -> 576x384 resized, 38 held intermediate 192x128, 38 held intermediate 192x128, 38 held intermediate 192x128, 38 held intermediate 192x128, 38 held intermediate 576x384, 112 target 576x384 -> 576x768 resized, 112 held intermediate 192x256, 112 held intermediate 192x256, 112 held intermediate 192x256, 112 held intermediate 192x256, 112 held intermediate 576x768]}",
+          "PORT_MOTION {phase=still-lantern, frames=531, travel_blocks=0.255846102412141, frame_p50_ms=8.3406, frame_p95_ms=32.4943, frame_p99_ms=37.7329, frame_max_ms=38.1884, frames_over_16ms=61, refresh_max_ms=0.1509, upload_total_ms=0.0, held_build_ms=0.0, counts={held_groups_processed=532}, events=[]}",
+          "PORT_MOTION {phase=walking-lantern-again, frames=599, travel_blocks=84.42971215711587, frame_p50_ms=33.3778, frame_p95_ms=37.2585, frame_p99_ms=37.9766, frame_max_ms=39.109, frames_over_16ms=599, refresh_max_ms=0.3865, upload_total_ms=2.64, held_build_ms=0.0, counts={held_groups_processed=600, snapshots=8}, events=[]}",
+          "PORT_MOTION {phase=walking-soul-lantern, frames=358, travel_blocks=50.15186271295133, frame_p50_ms=33.4879, frame_p95_ms=36.5937, frame_p99_ms=37.4901, frame_max_ms=65.6444, frames_over_16ms=357, refresh_max_ms=31.2038, upload_total_ms=0.8240999999999999, held_build_ms=0.0, counts={held_groups_processed=356, held_intermediate_allocations=5, held_vertex_allocations=1, snapshots=5}, events=[8 held intermediate 192x256, 8 held intermediate 192x256, 8 held intermediate 192x256, 8 held intermediate 192x256, 8 held intermediate 576x768]}",
+          "PORT_MOTION {phase=walking-copper-lantern, frames=358, travel_blocks=50.631347591810865, frame_p50_ms=33.2461, frame_p95_ms=37.5601, frame_p99_ms=37.9011, frame_max_ms=62.1994, frames_over_16ms=358, refresh_max_ms=0.3803, upload_total_ms=0.7397, held_build_ms=0.0, counts={held_groups_processed=356, held_intermediate_allocations=5, held_vertex_allocations=1, snapshots=5}, events=[7 held intermediate 192x256, 7 held intermediate 192x256, 7 held intermediate 192x256, 7 held intermediate 192x256, 7 held intermediate 576x768]}",
+          "PORT_MOTION {phase=look-away-lantern, frames=358, travel_blocks=0.25584610239641137, frame_p50_ms=33.3479, frame_p95_ms=37.5336, frame_p99_ms=37.9266, frame_max_ms=58.1218, frames_over_16ms=358, refresh_max_ms=0.2043, upload_total_ms=0.0, held_build_ms=0.0, counts={held_groups_processed=354, held_intermediate_allocations=5, held_vertex_allocations=1, world_intermediate_allocations=10}, events=[8 held intermediate 192x256, 8 held intermediate 192x256, 8 held intermediate 192x256, 8 held intermediate 192x256, 8 held intermediate 576x768, 81 world intermediate 640x337, 81 world intermediate 640x337, 81 world intermediate 640x337, 81 world intermediate 640x337, 81 world intermediate 1920x1009, 161 world intermediate 640x337, 161 world intermediate 640x337, 161 world intermediate 640x337, 161 world intermediate 640x337, 161 world intermediate 1920x1009]}",
+          "PORT_MOTION {phase=look-away-empty, frames=359, travel_blocks=0.0, frame_p50_ms=33.3321, frame_p95_ms=36.8825, frame_p99_ms=37.7137, frame_max_ms=38.5815, frames_over_16ms=359, refresh_max_ms=0.1583, upload_total_ms=0.0, held_build_ms=0.0, counts={held_groups_processed=7, held_targets_closed=1, world_intermediate_allocations=15}, events=[1 world intermediate 640x337, 1 world intermediate 640x337, 1 world intermediate 640x337, 1 world intermediate 640x337, 1 world intermediate 1920x1009, 81 world intermediate 640x337, 81 world intermediate 640x337, 81 world intermediate 640x337, 81 world intermediate 640x337, 81 world intermediate 1920x1009, 161 world intermediate 640x337, 161 world intermediate 640x337, 161 world intermediate 640x337, 161 world intermediate 640x337, 161 world intermediate 1920x1009]}",
+          "PORT_MOTION {phase=reequip-lantern, frames=88, travel_blocks=0.0, frame_p50_ms=33.8454, frame_p95_ms=37.5291, frame_p99_ms=38.1793, frame_max_ms=38.1793, frames_over_16ms=88, refresh_max_ms=0.1417, upload_total_ms=0.0, held_build_ms=1.5840999999999998, counts={chain_held=2, held_chains=2, held_groups_processed=79, held_intermediate_allocations=10, held_target_allocations=2, held_targets_closed=1, held_vertex_allocations=1, world_intermediate_allocations=5}, events=[1 world intermediate 640x337, 1 world intermediate 640x337, 1 world intermediate 640x337, 1 world intermediate 640x337, 1 world intermediate 1920x1009, 8 target 0x0 -> 384x384 created, 8 held intermediate 128x128, 8 held intermediate 128x128, 8 held intermediate 128x128, 8 held intermediate 128x128, 8 held intermediate 384x384, 8 target 384x384 -> 768x384 resized, 8 held intermediate 256x128, 8 held intermediate 256x128, 8 held intermediate 256x128, 8 held intermediate 256x128, 8 held intermediate 768x384]}",
+          "PORT_SMOKE_COMPLETE motion benchmark"
+        ]
+      },
+      "motion_sha256": "2b235c98ab3e8efacb156eac6c0be52e4c1ebe273e4efe75bad6785b5e12a8fb",
+      "phases": [
+        {
+          "phase": "warm-torch",
+          "travel_blocks": 0.0,
+          "counts": {
+            "chain_held": 3,
+            "held_chains": 3,
+            "held_full_reset": 1,
+            "held_groups_processed": 262,
+            "held_intermediate_allocations": 15,
+            "held_target_allocations": 3,
+            "held_targets_closed": 2,
+            "held_vertex_allocations": 1
+          },
+          "events": [
+            "11 target 0x0 -> 384x384 created",
+            "11 held intermediate 128x128",
+            "11 held intermediate 128x128",
+            "11 held intermediate 128x128",
+            "11 held intermediate 128x128",
+            "11 held intermediate 384x384",
+            "19 target 384x384 -> 384x768 resized",
+            "19 held intermediate 128x256",
+            "19 held intermediate 128x256",
+            "19 held intermediate 128x256",
+            "19 held intermediate 128x256",
+            "19 held intermediate 384x768",
+            "20 target 384x768 -> 768x768 resized",
+            "20 held intermediate 256x256",
+            "20 held intermediate 256x256",
+            "20 held intermediate 256x256",
+            "20 held intermediate 256x256",
+            "20 held intermediate 768x768"
+          ]
+        },
+        {
+          "phase": "walking-lantern",
+          "travel_blocks": 126.64255608099499,
+          "counts": {
+            "chain_held": 2,
+            "held_chains": 2,
+            "held_groups_processed": 3517,
+            "held_intermediate_allocations": 15,
+            "held_target_allocations": 2,
+            "held_targets_closed": 2,
+            "held_vertex_allocations": 1,
+            "snapshots": 12
+          },
+          "events": [
+            "8 held intermediate 256x256",
+            "8 held intermediate 256x256",
+            "8 held intermediate 256x256",
+            "8 held intermediate 256x256",
+            "8 held intermediate 768x768",
+            "38 target 768x768 -> 576x384 resized",
+            "38 held intermediate 192x128",
+            "38 held intermediate 192x128",
+            "38 held intermediate 192x128",
+            "38 held intermediate 192x128",
+            "38 held intermediate 576x384",
+            "112 target 576x384 -> 576x768 resized",
+            "112 held intermediate 192x256",
+            "112 held intermediate 192x256",
+            "112 held intermediate 192x256",
+            "112 held intermediate 192x256",
+            "112 held intermediate 576x768"
+          ]
+        },
+        {
+          "phase": "still-lantern",
+          "travel_blocks": 0.255846102412141,
+          "counts": {
+            "held_groups_processed": 532
+          },
+          "events": []
+        },
+        {
+          "phase": "walking-lantern-again",
+          "travel_blocks": 84.42971215711587,
+          "counts": {
+            "held_groups_processed": 600,
+            "snapshots": 8
+          },
+          "events": []
+        },
+        {
+          "phase": "walking-soul-lantern",
+          "travel_blocks": 50.15186271295133,
+          "counts": {
+            "held_groups_processed": 356,
+            "held_intermediate_allocations": 5,
+            "held_vertex_allocations": 1,
+            "snapshots": 5
+          },
+          "events": [
+            "8 held intermediate 192x256",
+            "8 held intermediate 192x256",
+            "8 held intermediate 192x256",
+            "8 held intermediate 192x256",
+            "8 held intermediate 576x768"
+          ]
+        },
+        {
+          "phase": "walking-copper-lantern",
+          "travel_blocks": 50.631347591810865,
+          "counts": {
+            "held_groups_processed": 356,
+            "held_intermediate_allocations": 5,
+            "held_vertex_allocations": 1,
+            "snapshots": 5
+          },
+          "events": [
+            "7 held intermediate 192x256",
+            "7 held intermediate 192x256",
+            "7 held intermediate 192x256",
+            "7 held intermediate 192x256",
+            "7 held intermediate 576x768"
+          ]
+        },
+        {
+          "phase": "look-away-lantern",
+          "travel_blocks": 0.25584610239641137,
+          "counts": {
+            "held_groups_processed": 354,
+            "held_intermediate_allocations": 5,
+            "held_vertex_allocations": 1,
+            "world_intermediate_allocations": 10
+          },
+          "events": [
+            "8 held intermediate 192x256",
+            "8 held intermediate 192x256",
+            "8 held intermediate 192x256",
+            "8 held intermediate 192x256",
+            "8 held intermediate 576x768",
+            "81 world intermediate 640x337",
+            "81 world intermediate 640x337",
+            "81 world intermediate 640x337",
+            "81 world intermediate 640x337",
+            "81 world intermediate 1920x1009",
+            "161 world intermediate 640x337",
+            "161 world intermediate 640x337",
+            "161 world intermediate 640x337",
+            "161 world intermediate 640x337",
+            "161 world intermediate 1920x1009"
+          ]
+        },
+        {
+          "phase": "look-away-empty",
+          "travel_blocks": 0.0,
+          "counts": {
+            "held_groups_processed": 7,
+            "held_targets_closed": 1,
+            "world_intermediate_allocations": 15
+          },
+          "events": [
+            "1 world intermediate 640x337",
+            "1 world intermediate 640x337",
+            "1 world intermediate 640x337",
+            "1 world intermediate 640x337",
+            "1 world intermediate 1920x1009",
+            "81 world intermediate 640x337",
+            "81 world intermediate 640x337",
+            "81 world intermediate 640x337",
+            "81 world intermediate 640x337",
+            "81 world intermediate 1920x1009",
+            "161 world intermediate 640x337",
+            "161 world intermediate 640x337",
+            "161 world intermediate 640x337",
+            "161 world intermediate 640x337",
+            "161 world intermediate 1920x1009"
+          ]
+        },
+        {
+          "phase": "reequip-lantern",
+          "travel_blocks": 0.0,
+          "counts": {
+            "chain_held": 2,
+            "held_chains": 2,
+            "held_groups_processed": 79,
+            "held_intermediate_allocations": 10,
+            "held_target_allocations": 2,
+            "held_targets_closed": 1,
+            "held_vertex_allocations": 1,
+            "world_intermediate_allocations": 5
+          },
+          "events": [
+            "1 world intermediate 640x337",
+            "1 world intermediate 640x337",
+            "1 world intermediate 640x337",
+            "1 world intermediate 640x337",
+            "1 world intermediate 1920x1009",
+            "8 target 0x0 -> 384x384 created",
+            "8 held intermediate 128x128",
+            "8 held intermediate 128x128",
+            "8 held intermediate 128x128",
+            "8 held intermediate 128x128",
+            "8 held intermediate 384x384",
+            "8 target 384x384 -> 768x384 resized",
+            "8 held intermediate 256x128",
+            "8 held intermediate 256x128",
+            "8 held intermediate 256x128",
+            "8 held intermediate 256x128",
+            "8 held intermediate 768x384"
+          ]
+        }
+      ]
+    },
+    "rc24-final-detail": {
+      "manifest": {
+        "candidate_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+        "baseline_without_fluorescent": false,
+        "backend": "opengl",
+        "sodium": true,
+        "scope": "Rebuild counters while holding and walking/sprinting/turning; copied current settings, Punchy, Refined Torches. Diagnostic JVM and 120 cap: not an FPS benchmark.",
+        "diagnostic_vm": [
+          "-XX:TieredStopAtLevel=1",
+          "-XX:ActiveProcessorCount=2"
+        ],
+        "fixture": {
+          "libjf-26.3.1.jar": "1b236e7f12ec4cf78e1c7db6406638492abab99f106f7af18d38a245e40e07e2",
+          "punchy-3.1b-fabric-26.3.jar": "422533a6f412c9f2f2c421f1a5e26e42825eebdf904b678c44e3f3230187de25",
+          "refined torches 2.1.zip": "825afca97394c797746c8dcefb9aa94a1cc4db5da03df175348fe07941289990",
+          "respackopts-26.3.0.jar": "9051b9cbe22ddc2d474bb206d6c2f96d21ca9c5d47efe69b1c60c981d016333f",
+          "stillbloom-items.json": "5417f465a5024656279882eb056e70822c324d1dd70820ce1dab44910d3c2f31",
+          "stillbloom-textures.json": "f6490ad0c738071a2b41ddfcee5322bcda595104da615bc753ce45b933ef13b2",
+          "stillbloom.json": "ff74cc981ff0028b09caa74e13aaa0fb0535d10d71fb01a100504acc358ee617"
+        },
+        "probe": {
+          "dev/stillbloom/MotionBench.java": "f43b47dde93cbdbc16424e65eeb12e3ba99521e822201adfbeb97dc51fcafe4b",
+          "motionprobe/BatchProbe.java": "e281ad74b9922fa64e271075ad79a64600a3b81bd087725e92926fc21f52d5c5",
+          "motionprobe/Chains.java": "aac4149ac37d7efdd532d1f1300a32ad05c0692e0725f6f8caef4b14de70cb07",
+          "motionprobe/CompileProbe.java": "28fafffa141f0b8196b6fdd5d89bbcd1e87618e90f7518d21b0de9d70b379229",
+          "motionprobe/FrameProbe.java": "50417578c2157cc2ff5a8690a7d2af8aa06a04813714fdfd28173d290fef7a96",
+          "motionprobe/GeometryProbe.java": "578c9f400bc9ad39f8383e95a4d96f6f5b6e022c1193c7ed7a90e0546d7627a0",
+          "motionprobe/GroupProbe.java": "fd21884edb98d0e1135b5538750751812c9686f898686f273e92d42bda3cb99a",
+          "motionprobe/HeldProbe.java": "a093f013231be864176c863ab9bf4849ad98d08c0f371f077f6e22d52c13e032",
+          "motionprobe/MaskProbe.java": "5f15c0871f2cfd2f2d0f6fae41935accb071abca4c92003a9b16a8c2ab919cb6",
+          "motionprobe/SourceProbe.java": "71957456d4a3f3eb3df487ef735bdfa5bfa172957bc87880dd6bbfc2a372685b",
+          "motionprobe/TargetProbe.java": "97b38e9b00302db863d2ddf8ca15a5d6e7593c8e2b23a202f59bab974f0e9c8e"
+        }
+      },
+      "result": {
+        "exit_code": 0,
+        "owned_pid": 18420,
+        "elapsed_seconds": 146.56299999996554,
+        "complete": true,
+        "observations": [
+          "PORT_MOTION {phase=warm-torch, frames=268, travel_blocks=0.0, frame_p50_ms=8.333, frame_p95_ms=13.0949, frame_p99_ms=37.1419, frame_max_ms=914.2641, frames_over_16ms=7, refresh_max_ms=0.1792, upload_total_ms=0.0, held_build_ms=2.1063, counts={chain_held=3, held_chains=3, held_full_reset=1, held_groups_processed=235, held_intermediate_allocations=15, held_target_allocations=3, held_targets_closed=2, held_vertex_allocations=1}, events=[17 target 0x0 -> 384x384 created, 17 held intermediate 128x128, 17 held intermediate 128x128, 17 held intermediate 128x128, 17 held intermediate 128x128, 17 held intermediate 384x384, 19 target 384x384 -> 384x768 resized, 19 held intermediate 128x256, 19 held intermediate 128x256, 19 held intermediate 128x256, 19 held intermediate 128x256, 19 held intermediate 384x768, 20 target 384x768 -> 768x768 resized, 20 held intermediate 256x256, 20 held intermediate 256x256, 20 held intermediate 256x256, 20 held intermediate 256x256, 20 held intermediate 768x768]}",
+          "PORT_MOTION {phase=walking-lantern, frames=3518, travel_blocks=126.64255608099499, frame_p50_ms=8.3328, frame_p95_ms=12.5004, frame_p99_ms=13.3554, frame_max_ms=49.0522, frames_over_16ms=12, refresh_max_ms=0.4496, upload_total_ms=4.1073, held_build_ms=0.9929, counts={chain_held=1, held_chains=1, held_groups_processed=3508, held_intermediate_allocations=5, held_target_allocations=1, held_targets_closed=1, held_vertex_allocations=1, snapshots=12}, events=[38 target 768x768 -> 768x576 resized, 38 held intermediate 256x192, 38 held intermediate 256x192, 38 held intermediate 256x192, 38 held intermediate 256x192, 38 held intermediate 768x576]}",
+          "PORT_MOTION {phase=still-lantern, frames=542, travel_blocks=0.255846102412141, frame_p50_ms=8.3335, frame_p95_ms=34.4925, frame_p99_ms=36.2085, frame_max_ms=36.7767, frames_over_16ms=58, refresh_max_ms=0.1385, upload_total_ms=0.0, held_build_ms=0.0, counts={held_groups_processed=543}, events=[]}",
+          "PORT_MOTION {phase=walking-lantern-again, frames=599, travel_blocks=84.42971215711587, frame_p50_ms=33.676, frame_p95_ms=36.5453, frame_p99_ms=37.6435, frame_max_ms=40.1687, frames_over_16ms=599, refresh_max_ms=0.3058, upload_total_ms=2.4544, held_build_ms=0.0, counts={held_groups_processed=600, snapshots=8}, events=[]}",
+          "PORT_MOTION {phase=walking-soul-lantern, frames=358, travel_blocks=50.15186271295133, frame_p50_ms=33.3474, frame_p95_ms=36.6887, frame_p99_ms=37.6232, frame_max_ms=40.2202, frames_over_16ms=358, refresh_max_ms=0.3022, upload_total_ms=0.5987, held_build_ms=0.0, counts={held_groups_processed=356, held_vertex_allocations=1, snapshots=5}, events=[]}",
+          "PORT_MOTION {phase=walking-copper-lantern, frames=359, travel_blocks=50.631347591810865, frame_p50_ms=33.3533, frame_p95_ms=37.3628, frame_p99_ms=38.9321, frame_max_ms=39.8479, frames_over_16ms=359, refresh_max_ms=0.3358, upload_total_ms=0.7834, held_build_ms=0.0, counts={held_groups_processed=357, held_vertex_allocations=1, snapshots=5}, events=[]}",
+          "PORT_MOTION {phase=look-away-lantern, frames=359, travel_blocks=0.25584610239641137, frame_p50_ms=33.1549, frame_p95_ms=36.8639, frame_p99_ms=37.4603, frame_max_ms=40.3782, frames_over_16ms=359, refresh_max_ms=0.1653, upload_total_ms=0.0, held_build_ms=0.0, counts={held_groups_processed=354, held_vertex_allocations=1}, events=[]}",
+          "PORT_MOTION {phase=look-away-empty, frames=358, travel_blocks=0.0, frame_p50_ms=33.6181, frame_p95_ms=36.4317, frame_p99_ms=37.2569, frame_max_ms=49.7559, frames_over_16ms=358, refresh_max_ms=0.1445, upload_total_ms=0.0, held_build_ms=0.0, counts={held_groups_processed=6, held_targets_closed=1}, events=[]}",
+          "PORT_MOTION {phase=reequip-lantern, frames=89, travel_blocks=0.0, frame_p50_ms=33.1784, frame_p95_ms=36.8929, frame_p99_ms=37.3949, frame_max_ms=37.3949, frames_over_16ms=89, refresh_max_ms=0.1209, upload_total_ms=0.0, held_build_ms=1.7185000000000001, counts={chain_held=2, held_chains=2, held_groups_processed=80, held_intermediate_allocations=10, held_target_allocations=2, held_targets_closed=1, held_vertex_allocations=1}, events=[8 target 0x0 -> 384x192 created, 8 held intermediate 128x64, 8 held intermediate 128x64, 8 held intermediate 128x64, 8 held intermediate 128x64, 8 held intermediate 384x192, 8 target 384x192 -> 768x576 resized, 8 held intermediate 256x192, 8 held intermediate 256x192, 8 held intermediate 256x192, 8 held intermediate 256x192, 8 held intermediate 768x576]}",
+          "PORT_SMOKE_COMPLETE motion benchmark"
+        ]
+      },
+      "motion_sha256": "efb32c127c1a6617ea6a934d1ce7a21db2eeae58552a37c6c71f9b20e3532343",
+      "phases": [
+        {
+          "phase": "warm-torch",
+          "travel_blocks": 0.0,
+          "counts": {
+            "chain_held": 3,
+            "held_chains": 3,
+            "held_full_reset": 1,
+            "held_groups_processed": 235,
+            "held_intermediate_allocations": 15,
+            "held_target_allocations": 3,
+            "held_targets_closed": 2,
+            "held_vertex_allocations": 1
+          },
+          "events": [
+            "17 target 0x0 -> 384x384 created",
+            "17 held intermediate 128x128",
+            "17 held intermediate 128x128",
+            "17 held intermediate 128x128",
+            "17 held intermediate 128x128",
+            "17 held intermediate 384x384",
+            "19 target 384x384 -> 384x768 resized",
+            "19 held intermediate 128x256",
+            "19 held intermediate 128x256",
+            "19 held intermediate 128x256",
+            "19 held intermediate 128x256",
+            "19 held intermediate 384x768",
+            "20 target 384x768 -> 768x768 resized",
+            "20 held intermediate 256x256",
+            "20 held intermediate 256x256",
+            "20 held intermediate 256x256",
+            "20 held intermediate 256x256",
+            "20 held intermediate 768x768"
+          ]
+        },
+        {
+          "phase": "walking-lantern",
+          "travel_blocks": 126.64255608099499,
+          "counts": {
+            "chain_held": 1,
+            "held_chains": 1,
+            "held_groups_processed": 3508,
+            "held_intermediate_allocations": 5,
+            "held_target_allocations": 1,
+            "held_targets_closed": 1,
+            "held_vertex_allocations": 1,
+            "snapshots": 12
+          },
+          "events": [
+            "38 target 768x768 -> 768x576 resized",
+            "38 held intermediate 256x192",
+            "38 held intermediate 256x192",
+            "38 held intermediate 256x192",
+            "38 held intermediate 256x192",
+            "38 held intermediate 768x576"
+          ]
+        },
+        {
+          "phase": "still-lantern",
+          "travel_blocks": 0.255846102412141,
+          "counts": {
+            "held_groups_processed": 543
+          },
+          "events": []
+        },
+        {
+          "phase": "walking-lantern-again",
+          "travel_blocks": 84.42971215711587,
+          "counts": {
+            "held_groups_processed": 600,
+            "snapshots": 8
+          },
+          "events": []
+        },
+        {
+          "phase": "walking-soul-lantern",
+          "travel_blocks": 50.15186271295133,
+          "counts": {
+            "held_groups_processed": 356,
+            "held_vertex_allocations": 1,
+            "snapshots": 5
+          },
+          "events": []
+        },
+        {
+          "phase": "walking-copper-lantern",
+          "travel_blocks": 50.631347591810865,
+          "counts": {
+            "held_groups_processed": 357,
+            "held_vertex_allocations": 1,
+            "snapshots": 5
+          },
+          "events": []
+        },
+        {
+          "phase": "look-away-lantern",
+          "travel_blocks": 0.25584610239641137,
+          "counts": {
+            "held_groups_processed": 354,
+            "held_vertex_allocations": 1
+          },
+          "events": []
+        },
+        {
+          "phase": "look-away-empty",
+          "travel_blocks": 0.0,
+          "counts": {
+            "held_groups_processed": 6,
+            "held_targets_closed": 1
+          },
+          "events": []
+        },
+        {
+          "phase": "reequip-lantern",
+          "travel_blocks": 0.0,
+          "counts": {
+            "chain_held": 2,
+            "held_chains": 2,
+            "held_groups_processed": 80,
+            "held_intermediate_allocations": 10,
+            "held_target_allocations": 2,
+            "held_targets_closed": 1,
+            "held_vertex_allocations": 1
+          },
+          "events": [
+            "8 target 0x0 -> 384x192 created",
+            "8 held intermediate 128x64",
+            "8 held intermediate 128x64",
+            "8 held intermediate 128x64",
+            "8 held intermediate 128x64",
+            "8 held intermediate 384x192",
+            "8 target 384x192 -> 768x576 resized",
+            "8 held intermediate 256x192",
+            "8 held intermediate 256x192",
+            "8 held intermediate 256x192",
+            "8 held intermediate 256x192",
+            "8 held intermediate 768x576"
+          ]
+        }
+      ]
+    }
+  },
+  "source_archive_build": {
+    "complete": true,
+    "tests": {
+      "tests": 381,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "matching_jar_entries": 305,
+    "independent_jar_sha256": "e2669a4473e842a6828794f1149d14abbd00023e2a832353227aba44bf7ddb6f",
+    "build": "Ordinary Gradle offline clean build from the clean source ZIP, JDK 25, cached dependencies.",
+    "inputs_checked": 277,
+    "local_build_outputs_or_test_fixtures_copied": false
+  },
+  "release_ready": false,
+  "normal_runtime_limitation": {
+    "label": "rc24-final-gl",
+    "intermediate_candidate_sha256": "85861b35f3812c524420b28ef03ccc1b47b831da9bf2b33f430a30a6df7992d7",
+    "stage": "Resource reload; earlier world, menu and weather cases completed.",
+    "windows_fault_module": "jvm.dll",
+    "windows_exception_code": "0xc0000005",
+    "root_cause": "Unisolated. Earlier no-mod failures do not prove this reload crash has the same cause.",
+    "final_binary_ordinary_runtime_complete": false
+  },
+  "scope_limits": [
+    "Final native runs use TieredStopAtLevel=1 and ActiveProcessorCount=2 in temporary launchers only.",
+    "Movement figures are allocation counts, not FPS benchmarks; the inactivity limiter affected timing.",
+    "OpenGL weather depth readback was skipped; Vulkan depth and both weather-color comparisons passed.",
+    "The real Modrinth profile and separate 26.2 source were not modified.",
+    "Longer normal-runtime playtesting with the complete mod/resource-pack list remains necessary."
+  ]
+}

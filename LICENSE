@@ -1,21 +1,89 @@
-MIT License
+Fluorescent License
+Version 1.0 - November 4, 2026
+SPDX-License-Identifier: LicenseRef-Fluorescent
 
-Copyright (c) 2026 Kivo
+Copyright (c) 2026 Kivo.
+All rights reserved except for the permissions expressly granted below.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Scope
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+"Licensor" means Kivo. "Mod" means the Fluorescent software, including its
+source code, compiled code, shaders, documentation and supplied assets, to
+the extent that the Licensor has the rights to license them. Separately
+licensed third-party materials are governed by their own terms.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+"Preset Data" means non-executable configuration and customization data for
+Fluorescent: presets, settings, block or item overrides, linked-block
+settings, and painted bloom-mask data. It includes such data created or
+exported with Fluorescent and any preset data supplied by the Licensor.
+It does not include the Mod's code, shader implementations, compiled files,
+or underlying Minecraft or resource-pack textures, models or other assets.
+
+2. Permissions granted without asking
+
+Subject to this license, you may:
+
+- Download, install and run an authorized copy of the Mod for gameplay.
+  You may make copies and backups for your own use. If source is supplied,
+  you may read it and compile an unmodified copy for your own use.
+- Configure the Mod, use its editors, paint masks, and create, edit, import,
+  export, copy and share Preset Data without obtaining the Licensor's
+  permission. Preset Data may be shared on its own or as the configuration
+  portion of a modpack, without bundling the Mod itself.
+- Create and share screenshots, gameplay videos and streams showing the
+  Mod, including monetized videos and streams, subject to any applicable
+  third-party terms.
+- Link to the official Fluorescent download. A modpack manifest may refer
+  users or launchers to an official authorized download rather than bundle
+  or rehost a copy of the Mod.
+
+The Licensor claims no ownership of your independently created Preset Data.
+This license imposes no additional restriction on sharing that data to the
+extent the Licensor's rights are involved. It does not grant rights to
+another creator's presets or third-party content; obtain any permissions
+needed from their respective owners. Sharing Preset Data alone does not
+require including this license or obtaining approval from Kivo.
+
+3. Activities requiring prior written permission
+
+Except as permitted above, by a separate authorization, or by applicable
+law, you must obtain the Licensor's prior written permission to:
+
+- Redistribute, reupload, mirror or bundle the Mod, its source code,
+  compiled files, shaders or supplied assets, whether modified or not.
+- Modify the Mod's implementation, create or distribute a port or fork,
+  or reuse its code, shaders or supplied assets in another project.
+- Sell or otherwise commercially license copies of the Mod or its code
+  or supplied assets.
+
+Changing settings, editing masks and modifying or sharing Preset Data are
+expressly permitted by section 2 and do not require such permission.
+Permission requests should be directed to Kivo through a contact method
+published on the official Fluorescent project page.
+
+Keep this license and applicable copyright notices with any authorized
+copy of the Mod. Do not represent an unofficial preset or modified version
+as an official release or as endorsed by Kivo without authorization.
+
+4. Other rights and agreements
+
+This license grants only rights the Licensor can grant. It does not license
+Minecraft, third-party resource packs or dependencies, or someone else's
+independently created work. Their applicable terms remain in effect.
+
+Nothing here limits rights or exceptions provided by applicable law,
+including fair use or other statutory exceptions, or withdraws permissions
+already granted under another license or agreement. Permissions separately
+granted by the Licensor to hosting platforms remain effective under those
+agreements, including any applicable distribution or modpack permissions.
+
+All rights not expressly granted are reserved. This is a custom license
+with limited permissions, not an open-source license.
+
+5. Warranty and liability
+
+To the extent permitted by applicable law, the Mod and any Licensor-supplied
+Preset Data are provided as-is, without warranties of any kind. The
+Licensor is not liable for damages arising from their use or inability to
+use them. Nothing in this section excludes rights or liabilities that
+cannot legally be excluded.

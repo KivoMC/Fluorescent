@@ -1,0 +1,2291 @@
+{
+  "blocks": {
+    "enderscape:end_lamp": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/end_lamp": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            1610219520,
+            2147360760,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            536379390,
+            24570
+          ]
+        }
+      }
+    },
+    "enderscape:end_trial_spawner": {
+      "strength": 8.0,
+      "textures": {
+        "enderscape:block/end_trial_spawner_side_active": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            -2122252288,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "enderscape:block/end_trial_spawner_top_active": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1073496061
+          ]
+        },
+        "enderscape:block/end_trial_spawner_top_ejecting_reward": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1073496061
+          ]
+        }
+      }
+    },
+    "enderscape:end_vault": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/end_vault_bottom": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "enderscape:block/end_vault_front_ejecting": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            1632,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "enderscape:block/end_vault_front_off": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "enderscape:block/end_vault_front_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            1632,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "enderscape:block/end_vault_side_off": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "enderscape:block/end_vault_side_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "enderscape:block/end_vault_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "enderscape:block/end_vault_top_ejecting": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "enderscape:nebulite_ore": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/nebulite_ore": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            552624224,
+            33030648,
+            6291696,
+            0,
+            2013278208,
+            806123520,
+            4
+          ]
+        },
+        "enderscape:block/nebulite_ore_emissive": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            552624224,
+            33030648,
+            6291696,
+            0,
+            2013278208,
+            806123520,
+            4
+          ]
+        }
+      }
+    },
+    "enderscape:potted_bulb_flower": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/bulb_flower": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            29360128,
+            65012704,
+            29361120,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "enderscape:block/bulb_flower_emissive": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            29360128,
+            65012704,
+            29361120,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/dirt": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/flower_pot": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "enderscape:void_campfire": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/void_campfire_fire": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "enderscape:void_fire": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/void_fire_0": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "enderscape:block/void_fire_1": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "enderscape:void_torch": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/void_torch": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62914560,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "enderscape:void_wall_torch": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/void_torch": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62914560,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:amethyst_block": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/amethyst_block": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:beacon": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/beacon": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            2147352576,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            32766
+          ]
+        },
+        "minecraft:block/glass": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/obsidian": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:brewing_stand": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/brewing_stand": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/brewing_stand_base": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:campfire": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/campfire_fire": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:copper_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            12583104,
+            12583104,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:copper_wall_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            12583104,
+            12583104,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:crimson_stem": {
+      "strength": 0.08,
+      "textures": {
+        "minecraft:block/crimson_stem": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            1942774732,
+            -208014881,
+            -415697991,
+            1009876531,
+            1003165929,
+            -1642914033,
+            -214059239,
+            1867310958
+          ]
+        }
+      },
+      "override": {
+        "width": 128.0
+      }
+    },
+    "minecraft:end_portal_frame": {
+      "strength": 3.969697,
+      "textures": {
+        "minecraft:block/end_portal_frame_eye": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            267390960,
+            267390960,
+            267390960,
+            267390960,
+            267390960,
+            267390960,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/end_portal_frame_side": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/end_portal_frame_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            135270384,
+            135268368,
+            135268368,
+            267388944,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/end_stone": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "override": {
+        "shape": "STARBURST",
+        "width": 128.0
+      }
+    },
+    "minecraft:end_rod": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/end_rod": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            983055,
+            196611,
+            196611,
+            196611,
+            196611,
+            196611,
+            196611,
+            3
+          ]
+        }
+      }
+    },
+    "minecraft:glowstone": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/glowstone": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:golden_dandelion": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/golden_dandelion": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            25165824,
+            132121536,
+            960,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:jack_o_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/jack_o_lantern": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            2097152,
+            477105264,
+            1009785968,
+            0,
+            2146964288,
+            11984,
+            0
+          ]
+        }
+      },
+      "override": {
+        "color": 16745728
+      }
+    },
+    "minecraft:lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/lampiao": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            62915520,
+            62915520,
+            960,
+            4128831,
+            71238719,
+            71238719,
+            1024,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:lava": {
+      "strength": 1.0,
+      "textures": {},
+      "override": {
+        "intensity": 0.0
+      }
+    },
+    "minecraft:magenta_candle": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/magenta_candle_lit": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            196608,
+            196611,
+            196611,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:nether_portal": {
+      "strength": 0.25333333,
+      "textures": {
+        "minecraft:block/nether_portal": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      },
+      "override": {
+        "shape": "SQUARE",
+        "width": 125.63158
+      }
+    },
+    "minecraft:oak_hanging_sign": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/oak_hanging_sign": {
+          "width": 32,
+          "height": 32,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:ochre_froglight": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/ochre_froglight_side": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/ochre_froglight_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      },
+      "override": {
+        "color": 16764036
+      }
+    },
+    "minecraft:pearlescent_froglight": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/pearlescent_froglight_side": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/pearlescent_froglight_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      },
+      "override": {
+        "color": 14989823
+      }
+    },
+    "minecraft:redstone_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            50332416,
+            50332416,
+            768,
+            0,
+            0,
+            0,
+            201329664,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:redstone_wall_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            50332416,
+            50332416,
+            768,
+            0,
+            0,
+            0,
+            201329664,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:sea_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/sea_lantern": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:shroomlight": {
+      "strength": 0.30666667,
+      "textures": {
+        "minecraft:block/shroomlight": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:soul_campfire": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/soul_campfire_fire": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:soul_lantern": {
+      "strength": 0.95454544,
+      "textures": {
+        "minecraft:block/lampiao_alma": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            1136682944,
+            1136682944,
+            26560,
+            4128831,
+            4128831,
+            4128831,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/soul_lantern": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            1966080,
+            1966110,
+            1966110,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:soul_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            786444,
+            786444,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:soul_wall_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            786444,
+            786444,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:verdant_froglight": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/verdant_froglight_side": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/verdant_froglight_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      },
+      "override": {
+        "color": 11730797
+      }
+    },
+    "minecraft:warped_stem": {
+      "strength": 0.10666667,
+      "textures": {
+        "minecraft:block/warped_stem": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            558375240,
+            -787922554,
+            1108369680,
+            404825122,
+            428478529,
+            369166854,
+            -1591209463,
+            642007588
+          ]
+        }
+      },
+      "override": {
+        "width": 32.86842
+      }
+    },
+    "enderscape:void_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "enderscape:block/void_lantern": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            1966080,
+            4128768,
+            4128831,
+            4128831,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:crying_obsidian": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/crying_obsidian": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            140509200,
+            1681983488,
+            1108100092,
+            163614851,
+            -1000012240,
+            -1071112034,
+            472917024,
+            570954248
+          ]
+        }
+      }
+    },
+    "minecraft:enchanting_table": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/enchanting_table_side": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            -267390961,
+            -536350705,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/enchanting_table_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -267390961,
+            -536350705,
+            0,
+            0,
+            0,
+            0,
+            -267395065,
+            -267390961
+          ]
+        }
+      }
+    },
+    "minecraft:vault": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/vault_front_ejecting": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            576,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "minecraft:block/vault_front_ejecting_ominous": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            1632,
+            4104,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "minecraft:block/vault_front_off": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/vault_front_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            576,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "minecraft:block/vault_front_on_ominous": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            1632,
+            4104,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "minecraft:block/vault_side_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        },
+        "minecraft:block/vault_side_on_ominous": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080
+          ]
+        }
+      }
+    },
+    "minecraft:furnace": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/furnace_front_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            535306232,
+            1073487848
+          ]
+        }
+      }
+    },
+    "minecraft:smoker": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/smoker_front_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            267386880,
+            1073480848,
+            1073496060,
+            1037843932,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:blast_furnace": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/blast_furnace_front_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            88081728,
+            88081728,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:repeater": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/redstone_torch": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62914560,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/repeater_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            25166208,
+            25166208,
+            25166208,
+            25166208,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:comparator": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/comparator_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            267386880,
+            4080,
+            0
+          ]
+        },
+        "minecraft:block/redstone_torch": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62914560,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:sculk_sensor": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/sculk_sensor_tendril_active": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/sculk_sensor_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:sculk_shrieker": {
+      "strength": 8.0,
+      "textures": {
+        "minecraft:block/sculk_shrieker_can_summon_inner_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            2147352576,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            32764
+          ]
+        },
+        "minecraft:block/sculk_shrieker_inner_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            2147352576,
+            2147385342,
+            2147254270,
+            2147385342,
+            2147385342,
+            2147385342,
+            2147385342,
+            32766
+          ]
+        }
+      }
+    },
+    "minecraft:calibrated_sculk_sensor": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/calibrated_sculk_sensor_amethyst": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/calibrated_sculk_sensor_input_side": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            62915552,
+            266339264,
+            267913184,
+            65013728
+          ]
+        },
+        "minecraft:block/calibrated_sculk_sensor_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            62914944,
+            29361088,
+            132121536,
+            29360512,
+            62915040
+          ]
+        },
+        "minecraft:block/sculk_sensor_tendril_active": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:powered_rail": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/powered_rail_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            69206016,
+            25166880,
+            69206400,
+            25166880,
+            69206400,
+            25166880,
+            69206400,
+            1056
+          ]
+        }
+      }
+    },
+    "minecraft:detector_rail": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/detector_rail_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            132120576,
+            69207072,
+            69207072,
+            2016,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:activator_rail": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/activator_rail_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            204472320,
+            25168944,
+            204472704,
+            25168944,
+            204472704,
+            25168944,
+            204472704,
+            3120
+          ]
+        }
+      }
+    },
+    "minecraft:crafter": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/crafter_east_crafting": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            196611,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/crafter_east_triggered": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            196611,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/crafter_south_triggered": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/crafter_top_crafting": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            196611,
+            536346624,
+            306713160,
+            306716664,
+            536351304,
+            306713160,
+            8184,
+            0
+          ]
+        },
+        "minecraft:block/crafter_top_triggered": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/crafter_west_crafting": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073692672,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/crafter_west_triggered": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073692672,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:redstone_ore": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/redstone_ore": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            14680064,
+            821036024,
+            0,
+            939949582,
+            0,
+            1054968,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:spawner": {
+      "strength": 0.969697,
+      "textures": {
+        "minecraft:block/spawner": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            576,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:trial_spawner": {
+      "strength": 3.0,
+      "textures": {
+        "minecraft:block/trial_spawner_side_active": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            1111621632,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/trial_spawner_side_active_ominous": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            1717960704,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:block/trial_spawner_top_active": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1073496061
+          ]
+        },
+        "minecraft:block/trial_spawner_top_active_ominous": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1073496061
+          ]
+        },
+        "minecraft:block/trial_spawner_top_ejecting_reward": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1073496061
+          ]
+        },
+        "minecraft:block/trial_spawner_top_ejecting_reward_ominous": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1073496061,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1073496061
+          ]
+        }
+      },
+      "override": {
+        "color": 10172928
+      }
+    },
+    "minecraft:magma_block": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/magma": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            813707394,
+            -1887844153,
+            269551673,
+            -655233008,
+            -2029744737,
+            1108099588,
+            -1089256943,
+            809898238
+          ]
+        }
+      }
+    },
+    "minecraft:respawn_anchor": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/respawn_anchor_side0": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            -1073414144,
+            -1071095786,
+            487597280,
+            570954248
+          ]
+        },
+        "minecraft:block/respawn_anchor_side1": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            8388608,
+            192,
+            0,
+            -1073283072,
+            -1071112170,
+            487597280,
+            570954248
+          ]
+        },
+        "minecraft:block/respawn_anchor_side2": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            25165824,
+            960,
+            0,
+            -1073414144,
+            -1071112170,
+            487597280,
+            570954504
+          ]
+        },
+        "minecraft:block/respawn_anchor_side3": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            25165824,
+            50332608,
+            256,
+            -1073414144,
+            -1071112170,
+            487597280,
+            570954248
+          ]
+        },
+        "minecraft:block/respawn_anchor_side4": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            25165824,
+            62915520,
+            384,
+            -1073414144,
+            -1071112138,
+            487597280,
+            570954248
+          ]
+        },
+        "minecraft:block/respawn_anchor_top": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            268439620,
+            1073725436,
+            1073496060,
+            1073545212,
+            1073561596,
+            1073496060,
+            1073610748,
+            570949640
+          ]
+        },
+        "minecraft:block/respawn_anchor_top_off": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:open_eyeblossom": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/open_eyeblossom_emissive": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62914560,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:creaking_heart": {
+      "strength": 4.0,
+      "textures": {
+        "minecraft:block/creaking_heart_awake": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            281280512,
+            535172806,
+            1073684478,
+            -1,
+            -1,
+            -3145729,
+            -272302137,
+            8512
+          ]
+        },
+        "minecraft:block/creaking_heart_top_awake": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            2096627712,
+            2147384828,
+            1073225724,
+            2147385342,
+            1073643518,
+            2146992124,
+            2130591740,
+            31950
+          ]
+        }
+      }
+    },
+    "minecraft:warped_fungus": {
+      "strength": 0.6666667,
+      "textures": {
+        "minecraft:block/warped_fungus": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            101711872,
+            12584448,
+            192,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:crimson_fungus": {
+      "strength": 0.15151516,
+      "textures": {
+        "minecraft:block/crimson_fungus": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            6291968,
+            50332512,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:fire": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/fire_0": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/fire_1": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    "minecraft:soul_fire": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/soul_fire_0": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        "minecraft:block/soul_fire_1": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      },
+      "override": {
+        "color": 6741247
+      }
+    },
+    "minecraft:redstone_lamp": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:block/redstone_lamp_on": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            511180800,
+            1048329852,
+            2078178750,
+            267417582,
+            1743654896,
+            2040427470,
+            1048345662,
+            3696
+          ]
+        }
+      }
+    }
+  },
+  "groups": {
+    "4204eb8e-7442-41da-a820-533106845ab4": {
+      "automatic": false,
+      "members": [
+        "minecraft:copper_bulb",
+        "minecraft:exposed_copper_bulb",
+        "minecraft:oxidized_copper_bulb",
+        "minecraft:waxed_copper_bulb",
+        "minecraft:waxed_exposed_copper_bulb",
+        "minecraft:waxed_oxidized_copper_bulb",
+        "minecraft:waxed_weathered_copper_bulb",
+        "minecraft:weathered_copper_bulb"
+      ],
+      "profile": {
+        "strength": 1.0,
+        "textures": {
+          "minecraft:block/copper_bulb_lit": {
+            "width": 16,
+            "height": 16,
+            "words": [
+              242221056,
+              242224752,
+              2122219134,
+              32382,
+              2122186752,
+              2122219134,
+              242224752,
+              3696
+            ]
+          },
+          "minecraft:block/copper_bulb_lit_powered": {
+            "width": 16,
+            "height": 16,
+            "words": [
+              242221056,
+              242224752,
+              2122219134,
+              32382,
+              2122186752,
+              2122219134,
+              242224752,
+              3696
+            ]
+          }
+        }
+      },
+      "textureLinks": {
+        "minecraft:block/exposed_copper_bulb": "minecraft:block/copper_bulb",
+        "minecraft:block/exposed_copper_bulb_lit": "minecraft:block/copper_bulb_lit",
+        "minecraft:block/exposed_copper_bulb_lit_powered": "minecraft:block/copper_bulb_lit_powered",
+        "minecraft:block/exposed_copper_bulb_powered": "minecraft:block/copper_bulb_powered",
+        "minecraft:block/oxidized_copper_bulb": "minecraft:block/copper_bulb",
+        "minecraft:block/oxidized_copper_bulb_lit": "minecraft:block/copper_bulb_lit",
+        "minecraft:block/oxidized_copper_bulb_lit_powered": "minecraft:block/copper_bulb_lit_powered",
+        "minecraft:block/oxidized_copper_bulb_powered": "minecraft:block/copper_bulb_powered",
+        "minecraft:block/weathered_copper_bulb": "minecraft:block/copper_bulb",
+        "minecraft:block/weathered_copper_bulb_lit": "minecraft:block/copper_bulb_lit",
+        "minecraft:block/weathered_copper_bulb_lit_powered": "minecraft:block/copper_bulb_lit_powered",
+        "minecraft:block/weathered_copper_bulb_powered": "minecraft:block/copper_bulb_powered"
+      }
+    },
+    "7a62e77e-d8b0-44fa-b762-7c09f0444b9f": {
+      "automatic": false,
+      "members": [
+        "minecraft:copper_lantern",
+        "minecraft:exposed_copper_lantern",
+        "minecraft:oxidized_copper_lantern",
+        "minecraft:waxed_copper_lantern",
+        "minecraft:waxed_exposed_copper_lantern",
+        "minecraft:waxed_oxidized_copper_lantern",
+        "minecraft:waxed_weathered_copper_lantern",
+        "minecraft:weathered_copper_lantern"
+      ],
+      "profile": {
+        "strength": 6.26,
+        "textures": {
+          "minecraft:block/lampiao_cobre": {
+            "width": 16,
+            "height": 16,
+            "words": [
+              0,
+              0,
+              62915520,
+              67044351,
+              4129791,
+              4128831,
+              992,
+              15728880
+            ]
+          }
+        }
+      },
+      "textureLinks": {
+        "minecraft:block/lampiao_cobre_exposed": "minecraft:block/lampiao_cobre",
+        "minecraft:block/lampiao_cobre_oxidized": "minecraft:block/lampiao_cobre",
+        "minecraft:block/lampiao_cobre_weathered": "minecraft:block/lampiao_cobre"
+      }
+    },
+    "bdfa6c36-5fe3-4831-b8ab-abf9c20d2a3d": {
+      "automatic": false,
+      "members": [
+        "minecraft:torch",
+        "minecraft:wall_torch"
+      ],
+      "profile": {
+        "strength": 1.0,
+        "textures": {
+          "minecraft:block/tochas": {
+            "width": 16,
+            "height": 16,
+            "words": [
+              3145776,
+              3145776,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "minecraft:block/torch": {
+            "width": 16,
+            "height": 16,
+            "words": [
+              0,
+              0,
+              0,
+              25166208,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "override": {
+          "color": 16751137
+        }
+      },
+      "textureLinks": {}
+    },
+    "f38cda59-5bf7-4064-bfc8-2c3badbe112d": {
+      "automatic": false,
+      "members": [
+        "minecraft:amethyst_cluster",
+        "minecraft:large_amethyst_bud",
+        "minecraft:medium_amethyst_bud",
+        "minecraft:small_amethyst_bud"
+      ],
+      "profile": {
+        "strength": 1.0,
+        "textures": {
+          "minecraft:block/large_amethyst_bud": {
+            "width": 16,
+            "height": 16,
+            "words": [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "textureLinks": {
+        "minecraft:block/amethyst_cluster": "minecraft:block/large_amethyst_bud",
+        "minecraft:block/medium_amethyst_bud": "minecraft:block/large_amethyst_bud",
+        "minecraft:block/small_amethyst_bud": "minecraft:block/large_amethyst_bud"
+      }
+    }
+  },
+  "independentBlocks": []
+}

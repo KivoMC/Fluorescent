@@ -1,0 +1,40 @@
+{
+  "required": true,
+  "package": "dev.stillbloom.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "GameRendererMixin",
+    "ShaderManagerMixin",
+    "PostChainAccessor",
+    "PostChainFormatMixin",
+    "PostPassAccessor",
+    "PostPassMixin",
+    "LevelChunkSectionMixin",
+    "SpriteContentsAccessor",
+    "HeldItemFirstPersonMixin",
+    "HeldItemPlayerLayerMixin",
+    "HeldItemSubmitMixin",
+    "ItemRenderStateAccessor",
+    "ItemLayerAccessor",
+    "ItemTextureAtlasAccessor",
+    "ItemRenderTypeAccessor",
+    "ItemRenderSetupAccessor",
+    "ItemTextureBindingAccessor",
+    "ItemSpriteSourceListAccessor",
+    "CustomHeldItemSubmitMixin",
+    "PunchyModelPartsItemMixin",
+    "PunchyBedrockItemMixin",
+    "FogRendererAccessor",
+    "GameRendererAccessor",
+    "WeatherEffectRendererMixin",
+    "LevelWeatherMixin",
+    "AtmosphericFogMixin",
+    "MenuGuiMixin",
+    "GuiGraphicsAccessor",
+    "MenuGuiStateMixin",
+    "MenuTextStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

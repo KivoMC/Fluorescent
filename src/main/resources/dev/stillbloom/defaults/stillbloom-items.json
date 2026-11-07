@@ -1,0 +1,342 @@
+{
+  "items": {
+    "minecraft:torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/flame_padrao": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            3145728,
+            16515192,
+            16646398,
+            8257662,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:item/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            3145776,
+            3145776,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:punchy/model_parts_items/textures/tochas.png": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            3145776,
+            3145776,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:potion": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/potion_overlay": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            62915520,
+            62915520,
+            960,
+            4128831,
+            71238719,
+            71238719,
+            1024,
+            0
+          ]
+        },
+        "minecraft:punchy/model_parts_items/textures/lampiao.png": {
+          "width": 16,
+          "height": 48,
+          "words": [
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0,
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0,
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:soul_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_alma": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            1136682944,
+            1136682944,
+            26560,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:exposed_copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre_exposed": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:weathered_copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre_weathered": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:waxed_copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:waxed_exposed_copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre_exposed": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:waxed_weathered_copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre_weathered": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:waxed_oxidized_copper_lantern": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/lampioes/lampiao_cobre_oxidized": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            62915520,
+            62915520,
+            960,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:redstone_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            50332416,
+            50332416,
+            768,
+            0,
+            0,
+            0,
+            201329664,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:copper_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            12583104,
+            12583104,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "minecraft:punchy/model_parts_items/textures/tochas.png": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "minecraft:soul_torch": {
+      "strength": 1.0,
+      "textures": {
+        "minecraft:item/tochas": {
+          "width": 16,
+          "height": 16,
+          "words": [
+            786444,
+            786444,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}
